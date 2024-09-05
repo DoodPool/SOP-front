@@ -1,5 +1,4 @@
 import { HomePage } from './pages/HomePage.jsx'
-import { AboutUs } from './pages/AboutUs.jsx'
 import { MonsterIndex } from './pages/MonsterIndex.jsx'
 import { MonsterDetails } from './pages/MonsterDetails.jsx'
 
@@ -19,11 +18,6 @@ const routes = [
         path: 'monster/:monsterId',
         component: <MonsterDetails />,
         label: 'MonsterDetails'
-    },
-    {
-        path: 'about',
-        component: <AboutUs />,
-        label: 'About us'
     },
 ]
 

@@ -10,17 +10,18 @@ export function MonsterDetails() {
     const params = useParams()
 
     const [currMonster, setCurrMonster] = useState(null)
+    let [currId, setCurrId] = useState(params.monsterId)
 
     useEffect(() => {
         loadMonster()
-    }, [params.monsterId])
+    }, [currId])
 
     async function loadMonster() {
         try {
-            const monster = await monsterService.getById(params.monsterId)
+            const monster = await monsterService.getById(currId)
             // if (!monster) return navigate('/monster')
-            console.log('mon', monster);
-
+            // console.log('mon', monster);
+            
             setCurrMonster(monster)
         } catch (err) {
             console.log('Had issues loading monster', err)
@@ -29,20 +30,19 @@ export function MonsterDetails() {
     }
 
     async function setSopChoice(choice) {
-        try {
-            console.log('choice', choice);
-            let monsterToSave = {...currMonster}
-            monsterToSave.sopChoice = choice
-            updateMonster(monsterToSave)
-            // console.log('compare:', currMonster, monsterToSave);
-            // console.log('monsterToSave', monsterToSave);
-            
-            // const monster = await monsterService.getById(params.monsterId)
-        } catch (err) {
-            console.log('Had issues loading monster', err)
-            navigate('/monster')
-        }
+        const updatedMon = { ...currMonster, 'sopChoice': choice }
+        console.log('updatedMon', updatedMon);
+        await updateMonster(updatedMon)
+
+        let nextId = ++currId
+        setCurrId(nextId.toString())
+        navigate(`/monster/${nextId}`)
     }
+
+    // async function setNextMonsterId() {
+    //     const nextMonId = +params.monsterId + 1
+    //     setCurrId(nextMonId)
+    // }
 
     // function test() {
     //     navigate('/monster/101')

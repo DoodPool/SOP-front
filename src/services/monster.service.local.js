@@ -67,7 +67,7 @@ function _createMonsters() {
                 id: '103',
                 name: 'Barroth',
                 game: 'MHW',
-                iconImg: 'https:    //monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/gthumbnails/MHW-Barroth_Icon.png',
+                iconImg: 'https://monsterhunterworld.wiki.fextralife.com/file/Monster-Hunter-World/gthumbnails/MHW-Barroth_Icon.png',
                 sopChoice: null,
             },
         ]
