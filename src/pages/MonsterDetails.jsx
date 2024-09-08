@@ -3,14 +3,13 @@ import { utilService } from '../services/util.service'
 import { useNavigate, useParams } from 'react-router-dom'
 import { monsterService } from '../services/monster.service.local'
 import { loadCount, updateMonster } from '../store/monster.actions'
-import { useSelector } from 'react-redux'
+import { SopCounter } from '../cmps/SopCounter'
 
 export function MonsterDetails() {
 
     const navigate = useNavigate()
     const params = useParams()
 
-    const { smash, pass } = useSelector(storeState => storeState.monsterModule.sopCount)
     const [currMonster, setCurrMonster] = useState(null)
     let [currId, setCurrId] = useState(params.monsterId)
 
@@ -64,11 +63,7 @@ export function MonsterDetails() {
             <button onClick={() => setSopChoice('smash')}>Smash</button>
             <button onClick={() => setSopChoice('pass')}>pass</button>
 
-            <div>
-                <h2>Counter:</h2>
-                <h4>Smash: <span>{smash}</span></h4>
-                <h4>Pass: <span>{pass}</span></h4>
-            </div>
+            <SopCounter />
         </section >
     )
 }

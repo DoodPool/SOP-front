@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 import { loadMonsters, addMonster, updateMonster } from '../store/monster.actions.js'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
+import { SopCounter } from '../cmps/SopCounter.jsx'
 // import { monsterService } from '../services/monster.service.js'
 
 export function MonsterIndex() {
@@ -49,6 +50,7 @@ export function MonsterIndex() {
                     }
                 </ul>
             </main>
+            <SopCounter />
         </div>
     )
 }
