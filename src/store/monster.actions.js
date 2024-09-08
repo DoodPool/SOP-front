@@ -1,15 +1,9 @@
 import { monsterService } from "../services/monster.service.local.js";
 import { store } from './store.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-import { ADD_MONSTER, REMOVE_MONSTER, SET_MONSTERS, UNDO_REMOVE_MONSTER, UPDATE_MONSTER } from "./monster.reducer.js";
+import { ADD_MONSTER, SET_SOP_COUNT, SET_MONSTERS, UPDATE_MONSTER, UPDATE_SOP_COUNT } from "./monster.reducer.js";
 
 // Action Creators:
-export function getActionRemoveMonster(monsterId) {
-    return {
-        type: REMOVE_MONSTER,
-        monsterId
-    }
-}
 export function getActionAddMonster(monster) {
     return {
         type: ADD_MONSTER,
@@ -36,16 +30,28 @@ export async function loadMonsters() {
         console.log('Cannot load monsters', err)
         throw err
     }
-
 }
 
-export async function removeMonster(monsterId) {
+export async function loadCount() {
     try {
-        await monsterService.remove(monsterId)
-        store.dispatch(getActionRemoveMonster(monsterId))
+        let sopCount = {
+            smash: 0,
+            pass: 0,
+        }
+
+        const monsters = await monsterService.query()
+        monsters.forEach(monster => {
+            if (monster.sopChoice === 'smash') sopCount.smash++
+            if (monster.sopChoice === 'pass') sopCount.pass++
+        })
+
+        store.dispatch({
+            type: SET_SOP_COUNT,
+            sopCount
+        })
+
     } catch (err) {
-        console.log('Cannot remove monster', err)
-        throw err
+        console.log('cannot load monsters', err);
     }
 }
 

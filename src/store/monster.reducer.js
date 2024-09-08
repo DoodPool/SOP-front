@@ -1,38 +1,39 @@
 export const SET_MONSTERS = 'SET_MONSTERS'
-export const REMOVE_MONSTER = 'REMOVE_MONSTER'
+export const SET_SOP_COUNT = 'SET_SOP_COUNT'
 export const ADD_MONSTER = 'ADD_MONSTER'
 export const UPDATE_MONSTER = 'UPDATE_MONSTER'
-export const UNDO_REMOVE_MONSTER = 'UNDO_REMOVE_MONSTER'
+export const UPDATE_SOP_COUNT = 'UPDATE_SOP_COUNT'
 
 const initialState = {
     monsters: [],
-    lastRemovedMonster: null
+    sopCount: {
+        smash: 3,
+        pass: 0,
+    },
 }
 
 export function monsterReducer(state = initialState, action) {
     var newState = state
     var monsters
+    var sopCount
     switch (action.type) {
         case SET_MONSTERS:
             newState = { ...state, monsters: action.monsters }
             break
-        case REMOVE_MONSTER:
-            const lastRemovedMonster = state.monsters.find(monster => monster._id === action.monsterId)
-            monsters = state.monsters.filter(monster => monster._id !== action.monsterId)
-            newState = { ...state, monsters, lastRemovedMonster }
+        case SET_SOP_COUNT:
+            newState = { ...state, sopCount: action.sopCount }
             break
         case ADD_MONSTER:
             newState = { ...state, monsters: [...state.monsters, action.monster] }
             break
         case UPDATE_MONSTER:
-            monsters = state.monsters.map(monster => (monster._id === action.monster._id) ? action.monster : monster)
+            monsters = state.monsters.map(monster => (monster.id === action.monster.id) ? action.monster : monster)
             newState = { ...state, monsters }
             break
-        case UNDO_REMOVE_MONSTER:
-            if (state.lastRemovedMonster) {
-                newState = { ...state, monsters: [...state.monsters, state.lastRemovedMonster], lastRemovedMonster: null }
-            }
-            break
+        // case UPDATE_SOP_COUNT:
+        //     sopCount = state.sopCount.map(monster => (monster.id === action.monster.id) ? action.monster : monster)
+        //     newState = { ...state, monsters }
+        //     break
         default:
     }
     return newState

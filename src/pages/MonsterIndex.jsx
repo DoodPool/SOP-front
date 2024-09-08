@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { loadMonsters, addMonster, updateMonster, removeMonster } from '../store/monster.actions.js'
+import { loadMonsters, addMonster, updateMonster } from '../store/monster.actions.js'
 
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
 // import { monsterService } from '../services/monster.service.js'
@@ -12,15 +12,6 @@ export function MonsterIndex() {
     useEffect(() => {
         loadMonsters()
     }, [])
-
-    async function onRemoveMonster(monsterId) {
-        try {
-            await removeMonster(monsterId)
-            showSuccessMsg('Monster removed')
-        } catch (err) {
-            showErrorMsg('Cannot remove monster')
-        }
-    }
 
     // async function onAddMonster() {
     //     const monster = monsterService.getEmptyMonster()

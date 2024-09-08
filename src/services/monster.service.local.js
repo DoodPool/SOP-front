@@ -8,7 +8,6 @@ export const monsterService = {
     query,
     getById,
     save,
-    remove,
 }
 window.cs = monsterService
 
@@ -28,11 +27,6 @@ async function query(filterBy = { txt: '', price: 0 }) {
 
 function getById(monsterId) {
     return storageService.get(STORAGE_KEY, monsterId)
-}
-
-async function remove(monsterId) {
-    // throw new Error('Nope')
-    await storageService.remove(STORAGE_KEY, monsterId)
 }
 
 async function save(monster) {

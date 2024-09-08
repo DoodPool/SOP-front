@@ -2,18 +2,21 @@ import { useEffect, useState } from 'react'
 import { utilService } from '../services/util.service'
 import { useNavigate, useParams } from 'react-router-dom'
 import { monsterService } from '../services/monster.service.local'
-import { updateMonster } from '../store/monster.actions'
+import { loadCount, updateMonster } from '../store/monster.actions'
+import { useSelector } from 'react-redux'
 
 export function MonsterDetails() {
 
     const navigate = useNavigate()
     const params = useParams()
 
+    const { smash, pass } = useSelector(storeState => storeState.monsterModule.sopCount)
     const [currMonster, setCurrMonster] = useState(null)
     let [currId, setCurrId] = useState(params.monsterId)
 
     useEffect(() => {
         loadMonster()
+        loadCount()
     }, [currId])
 
     async function loadMonster() {
@@ -21,7 +24,7 @@ export function MonsterDetails() {
             const monster = await monsterService.getById(currId)
             // if (!monster) return navigate('/monster')
             // console.log('mon', monster);
-            
+
             setCurrMonster(monster)
         } catch (err) {
             console.log('Had issues loading monster', err)
@@ -60,6 +63,12 @@ export function MonsterDetails() {
 
             <button onClick={() => setSopChoice('smash')}>Smash</button>
             <button onClick={() => setSopChoice('pass')}>pass</button>
+
+            <div>
+                <h2>Counter:</h2>
+                <h4>Smash: <span>{smash}</span></h4>
+                <h4>Pass: <span>{pass}</span></h4>
+            </div>
         </section >
     )
 }
