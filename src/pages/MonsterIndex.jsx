@@ -38,7 +38,7 @@ export function MonsterIndex() {
 
     return (
         <div>
-            <h3>Monsters App</h3>
+            {/* <h3>Monsters App</h3> */}
             <main>
                 <ul className="monster-list">
                     {monsters.map(monster =>

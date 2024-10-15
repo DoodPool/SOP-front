@@ -1,0 +1,17 @@
+.counter-container {
+    font-size: 1.75rem;
+    color: $clr4;
+
+
+    h4:first-of-type {
+        color: green;
+    }
+
+    h4:last-of-type {
+        color: red;
+    }
+
+    span {
+        color: $clr4;
+    }
+}

@@ -52,8 +52,8 @@ export function MonsterDetails() {
 
     if (!currMonster) return <div>loading...</div>
     return (
-        <section>
-            <div>
+        <section className='details-container'>
+            <div className='main-info'>
                 <h1>{currMonster.name}</h1>
                 <p>Game: {currMonster.game}</p>
                 <p>choice: {currMonster.sopChoice}</p>
