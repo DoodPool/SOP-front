@@ -18,7 +18,7 @@
 }
 
 .logo {
-    line-height: 1.7rem;
+    // line-height: 1.7rem;
 
     &>* {
         margin: 0;
@@ -33,7 +33,7 @@
     }
 
     p {
-        font-family: monospace;
+        font-family: sans-serif;
         text-transform: uppercase;
         font-size: 1.4rem;
         margin-inline-start: 9.25rem;

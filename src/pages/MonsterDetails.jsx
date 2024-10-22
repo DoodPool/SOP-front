@@ -53,17 +53,18 @@ export function MonsterDetails() {
     if (!currMonster) return <div>loading...</div>
     return (
         <section className='details-container'>
-            <div className='main-info'>
-                <h1>{currMonster.name}</h1>
-                <p>Game: {currMonster.game}</p>
-                <p>choice: {currMonster.sopChoice}</p>
-                <img src={currMonster.iconImg} alt="" />
-            </div>
-
-            <button onClick={() => setSopChoice('smash')}>Smash</button>
-            <button onClick={() => setSopChoice('pass')}>pass</button>
-
             <SopCounter />
+
+            <div className='main-info'>
+                <h1>{currMonster.game}: {currMonster.name}</h1>
+                {/* <p>choice: {currMonster.sopChoice}</p> */}
+                <img src={currMonster.iconImg} alt="" />
+
+                <div className='sop-btns'>
+                    <button className='btn smash-btn' onClick={() => setSopChoice('smash')}>Smash</button>
+                    <button className='btn pass-btn' onClick={() => setSopChoice('pass')}>pass</button>
+                </div>
+            </div>
         </section >
     )
 }

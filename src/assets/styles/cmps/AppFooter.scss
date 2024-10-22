@@ -1,11 +1,50 @@
-.app-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
+.app-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #212121;
-    color: $clr4;
-    padding: 20px;
-    // margin: 10px;
-    text-align: center;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+
+    .logo {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+        width: 12rem;
+    }
+    
+    p {
+        justify-self: center;
+        align-self: end;
+        color: darken($color: white, $amount: 40%);
+    }
+
+    .social-links-container {
+        display: flex;
+        justify-self: end;
+
+        img {
+            width: 6.5rem;
+            margin-block: auto;
+            margin-inline-end: 1.5rem;
+
+            border-radius: 50%;
+            justify-self: end;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        &>* {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            color: white;
+            transition: 0.2s;
+
+            &:hover {
+                color: darken($color: white, $amount: 35);
+            }
+        }
+    }
 }

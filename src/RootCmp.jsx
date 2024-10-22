@@ -9,14 +9,16 @@ import { AppFooter } from './cmps/AppFooter'
 export function RootCmp() {
 
     return (
-        <div>
+        <div className='app-container'>
             <AppHeader />
-            <main>
+            {/* <div className='side-bar'>side var</div> */}
+            {/* <div className='main'>main</div> */}
+            <main className='main'>
                 <Routes>
                     {routes.map(route => <Route key={route.path} exact={true} element={route.component} path={route.path} />)}
                 </Routes>
             </main>
-            <AppFooter />
+            <AppFooter className='footer' />
         </div>
     )
 }

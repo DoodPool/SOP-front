@@ -1,12 +1,52 @@
 .details-container {
+    display: grid;
+    grid-template-columns: 325px 1fr 325px;
+    // margin-inline: 2rem;
 
+    height: 100%;
+
+    .counter-container {
+        align-self: end;
+        justify-self: center;
+        margin-block-end: 2rem;
+    }
 
     .main-info {
+        display: flex;
+        flex-direction: column;
 
-        h1,
-        p {
-            color: $clr4;
+        img {
+            height: 450px;
+            width: auto;
+            margin-inline: auto;
+            margin-block-start: auto;
+            margin-block-end: 2rem;
         }
 
+        h1 {
+            color: $clr4;
+            text-align: center;
+            font-size: 3rem;
+            margin-block-start: 1rem;
+        }
     }
+}
+
+.sop-btns {
+    margin-inline: auto;
+    margin-block-end: 1rem; 
+
+    &>* {
+        margin-inline: 0.5rem;
+    }
+}
+
+.smash-btn {
+    @include sop-btn($clr: #67C23A, $percentage: 45%);
+    // margin-inline-end: 5px;
+}
+
+.pass-btn {
+    @include sop-btn($clr: #F56C6C, $percentage: 25%);
+    // margin-inline-end: 5px;
 }

@@ -5,10 +5,10 @@ export function AppHeader() {
 
     const navigate = useNavigate()
     return (
-        <header className="app-header flex space-between align-center">
+        <header className="app-header flex space-between align-center header">
             <div className='logo pointer' onClick={() => navigate('/')}>
                 <h1>monster hunter</h1>
-                <p><span>Smash</span> or <span>Pass</span></p>
+                {/* <p><span>Smash</span> or <span>Pass</span></p> */}
             </div>
 
             <nav>
