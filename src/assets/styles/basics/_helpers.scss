@@ -42,10 +42,173 @@
     @include aspect-ratio(9, 16);
 }
 
-.pointer {
+.clean-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .border-bottom {
+    border-block-end: 1px solid #dedede;
+  }
+  
+  .detail-padding-bottom {
+    padding-block-end: 24px;
+  }
+  
+  .tx-cap {
+    text-transform: capitalize;
+  }
+  
+  .tx-upper {
+    text-transform: uppercase;
+  }
+  
+  .tx-center {
+    text-align: center;
+  }
+  
+  .h-full {
+    height: 100%;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .p-0 {
+    padding: 0;
+  }
+  
+  .left-4 {
+    left: 4rem;
+  }
+  
+  .left-8 {
+    left: 8rem;
+  }
+  
+  .right-8 {
+    right: 8rem;
+  }
+  
+  
+  // display
+  
+  .grid {
+    display: grid;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .none {
+    display: none;
+  }
+  
+  
+  // position
+  
+  .fixed {
+    position: fixed;
+  }
+  
+  .sticky {
+    position: sticky;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .clean-link {
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .mw-32 {
+    max-width: 32rem;
+  }
+  
+  .fw-400 {
+    font-weight: 400;
+  }
+  
+  .fw-700 {
+    font-weight: 700;
+  }
+  
+  .fade-in-2 {
+    animation: fade-in .2s;
+  }
+  
+  .fade-in-3 {
+    animation: fade-in .3s;
+  }
+  
+  .fade-in-5 {
+    animation: fade-in .5s;
+  }
+  
+  .opacity-0 {
+    opacity: 0;
+  }
+  
+  .opacity-05 {
+    opacity: .05;
+  }
+  
+  .opacity-1 {
+    opacity: 1;
+  }
+  
+  .clr-dark {
+    color: black;
+  }
+  
+  .clr-light {
+    color: white;
+  }
+  
+  .bg-light {
+    background-color: white;
+  }
+  
+  .bg-dark {
+    background-color: black;
+  }
+  
+  .pointer {
     cursor: pointer;
-}
+  }
 
-.h-full {
-    height: 100vh;
-}
+  .unavailable {
+    cursor: not-allowed;
+  }
+  
+  .inset-0 {
+    inset: 0;
+  }
+  
+  .select-none {
+    user-select: none;
+  }
+  
+  .rotate-45 {
+    transform: rotate(-45deg);
+  }
+  
+  .rotate-0 {
+    transform: rotate(0deg);
+  }
+  
+  .grid-col-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }

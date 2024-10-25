@@ -32,6 +32,21 @@ export async function loadMonsters() {
     }
 }
 
+export async function loadSopList() {
+    try {
+        const SmashList = await monsterService.query({ choice: 'smash' })
+        // console.log('Monsters from DB:', monsters)
+        // store.dispatch({
+        //     type: SET_MONSTERS,
+        //     monsters
+        // })
+
+    } catch (err) {
+        console.log('Cannot load monsters', err)
+        throw err
+    }
+}
+
 export async function loadCount() {
     try {
         let sopCount = {
@@ -70,7 +85,7 @@ export async function addMonster(monster) {
 export async function updateMonster(monster) {
     try {
         const savedMonster = await monsterService.save(monster)
-        console.log('Updated Monster:', savedMonster)
+        // console.log('Updated Monster:', savedMonster)
         store.dispatch(getActionUpdateMonster(savedMonster))
         return savedMonster
     } catch (err) {

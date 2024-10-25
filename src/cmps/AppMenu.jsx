@@ -1,15 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useNavigate } from "react-router";
 
-export function AppMenu() {
+export function AppMenu({ onToggleMenu }) {
+    const navigate = useNavigate()
+
+    function onHome() {
+        navigate('/')
+        onToggleMenu(false)
+    }
+
+    function onMonsterList() {
+        navigate('/monster')
+        onToggleMenu(false)
+    }
+
+    function onResults() {
+        navigate('/results')
+        onToggleMenu(false)
+    }
 
     return (
-        <section className="fade-in-2 flex column fixed h-full w-full bg-dark clr-light">
-            <h1 class="pointer">Home</h1>
+        <section className="menu-container fade-in-2 flex column fixed h-full w-full bg-dark clr-light">
+            <div className="menu-header flex space-between">
+                <h1 className="pointer" onClick={() => onHome()}>Home</h1>
+                <button className="pointer" onClick={() => onToggleMenu(false)}>X</button>
+            </div>
 
-            <nav class="flex column">
-                <p>Game selector</p>
-                <p>Monster list</p>
-                <p>results</p>
+            <nav className="flex column">
+                <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
+                <p className="pointer" onClick={() => onResults()}>results</p>
+                <p className="unavailable">Extra Challenge</p>
             </nav>
 
             <div className="links clean-list flex justify-center">

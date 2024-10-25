@@ -1,6 +1,7 @@
 import { HomePage } from './pages/HomePage.jsx'
 import { MonsterIndex } from './pages/MonsterIndex.jsx'
 import { MonsterDetails } from './pages/MonsterDetails.jsx'
+import { SopResults } from './pages/SopResults.jsx'
 
 // Routes accesible from the main navigation (in AppHeader)
 const routes = [
@@ -18,6 +19,11 @@ const routes = [
         path: 'monster/:monsterId',
         component: <MonsterDetails />,
         label: 'MonsterDetails'
+    },
+    {
+        path: 'results',
+        component: <SopResults />,
+        label: 'Results'
     },
 ]
 

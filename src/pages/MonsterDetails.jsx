@@ -33,7 +33,7 @@ export function MonsterDetails() {
 
     async function setSopChoice(choice) {
         const updatedMon = { ...currMonster, 'sopChoice': choice }
-        console.log('updatedMon', updatedMon);
+        // console.log('updatedMon', updatedMon);
         await updateMonster(updatedMon)
 
         let nextId = ++currId

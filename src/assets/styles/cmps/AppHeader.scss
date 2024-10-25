@@ -1,50 +1,20 @@
 .app-header {
-    background-color: $clr2;
     color: $clr4;
 
-    padding-inline: rem(30px);
-    padding-block-end: rem(10px);
-    padding-block-start: rem(15px);
+    padding-inline: 2rem;
+    padding-block-start: 1.5rem;
+    // padding-block-end: .5rem;
+
     font-size: rem(18px);
 
-    nav {
-        display: flex;
+    .header-btn {
+        color: $clr4;
+        background-color: inherit;
+        border: none;
 
-        p {
-            margin-inline-end: 1rem;
-
-        }
-    }
-}
-
-.logo {
-    // line-height: 1.7rem;
-
-    &>* {
-        margin: 0;
-        padding: 0;
-    }
-
-    h1 {
         font-family: superital, monospace;
         text-transform: uppercase;
         font-size: 2.25rem;
         letter-spacing: .15rem;
-    }
-
-    p {
-        font-family: sans-serif;
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        margin-inline-start: 9.25rem;
-
-
-        span:first-child {
-            color: green;
-        }
-
-        span:last-child {
-            color: red;
-        }
     }
 }

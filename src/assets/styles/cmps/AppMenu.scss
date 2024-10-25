@@ -1,0 +1,68 @@
+.menu-container {
+    top: 0;
+    z-index: 10;
+    inset: 0;
+
+    .menu-header {
+        padding-inline: 2rem;
+        padding-block-start: 1.5rem;
+        padding-block-end: 2.5rem;
+
+        h1,
+        button {
+            color: $clr4;
+            background-color: inherit;
+            border: none;
+            font-weight: 400;
+
+            font-family: superital, monospace;
+            text-transform: uppercase;
+            font-size: 2.25rem;
+            letter-spacing: .15rem;
+        }
+
+        button {
+            width: rem(90px);
+        }
+    }
+
+    nav {
+        font-size: 3.25rem;
+        line-height: 1.25;
+        text-transform: uppercase;
+
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        animation: slide-in .5s;
+    }
+
+    p {
+        font-family: superital, monospace;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+
+    .links {
+        margin: auto;
+        padding: 2rem;
+        gap: 1.5rem;
+
+        &>* {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            transition: 0.2s;
+
+            &:hover {
+                color: lighten($color: black, $amount: 65);
+            }
+        }
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
