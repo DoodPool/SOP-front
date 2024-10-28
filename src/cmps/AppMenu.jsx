@@ -19,6 +19,11 @@ export function AppMenu({ onToggleMenu }) {
         onToggleMenu(false)
     }
 
+    function onChallenge() {
+        navigate('/challenge')
+        onToggleMenu(false)
+    }
+
     return (
         <section className="menu-container fade-in-2 flex column fixed h-full w-full bg-dark clr-light">
             <div className="menu-header flex space-between">
@@ -29,7 +34,7 @@ export function AppMenu({ onToggleMenu }) {
             <nav className="flex column">
                 <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
                 <p className="pointer" onClick={() => onResults()}>results</p>
-                <p className="unavailable">Extra Challenge</p>
+                <p className="pointer" onClick={() => onChallenge()}>Extra Challenge</p>
             </nav>
 
             <div className="links clean-list flex justify-center">

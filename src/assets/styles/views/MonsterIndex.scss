@@ -1,23 +1,29 @@
 .monster-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    padding-block: 3rem;
+    padding-inline: 2rem;
 
-    li {
-        background-color: $clr2;
-        color: $clr4;
-        padding: 5px;
-        margin: 5px;
-    }
-
-    a {
-        color: $clr1;
+    .monster-preview {
+        display: flex;
+        flex-direction: column;
         padding: 10px;
-    }
+        // background-color: $clr2;
+        color: $clr4;
 
-    h3 {
-        background-color: #ddd;
-        padding: 10px 5px;
-        margin: 5px;
+        width: 250px;
+        height: 260px;
+        
+        img {
+            min-width: 100%;
+            height: auto;
+            // margin-block-end: auto;
+        }
+        
+        h3 {
+            text-align: center;
+            margin-block-start: auto;
+        }
     }
 }

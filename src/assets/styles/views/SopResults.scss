@@ -1,0 +1,31 @@
+.results-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 5rem;
+
+    .choice-list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .monster-preview {
+            display: flex;
+            flex-direction: column;
+            margin-block-start: 1.5rem;
+
+            width: 220px;
+            height: 300x;
+        }
+
+        img {
+            min-width: 100%;
+            height: auto;
+            margin-block-end: 1rem;
+            // max-width: 1fr;
+        }
+
+        h3 {
+            text-align: center;
+            margin-block-start: auto;
+        }
+    }
+}

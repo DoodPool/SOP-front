@@ -1,7 +1,7 @@
 import { monsterService } from "../services/monster.service.local.js";
 import { store } from './store.js'
 import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-import { ADD_MONSTER, SET_SOP_COUNT, SET_MONSTERS, UPDATE_MONSTER, UPDATE_SOP_COUNT } from "./monster.reducer.js";
+import { ADD_MONSTER, SET_SOP_COUNT, SET_MONSTERS, UPDATE_MONSTER, UPDATE_SOP_COUNT, SET_SMASH_LIST, SET_PASS_LIST } from "./monster.reducer.js";
 
 // Action Creators:
 export function getActionAddMonster(monster) {
@@ -34,12 +34,19 @@ export async function loadMonsters() {
 
 export async function loadSopList() {
     try {
-        const SmashList = await monsterService.query({ choice: 'smash' })
-        // console.log('Monsters from DB:', monsters)
-        // store.dispatch({
-        //     type: SET_MONSTERS,
-        //     monsters
-        // })
+        const smashList = await monsterService.query({ choice: 'smash' })
+        console.log('Smash from DB:', smashList)
+        store.dispatch({
+            type: SET_SMASH_LIST,
+            smashList
+        })
+        
+        const passList = await monsterService.query({ choice: 'pass' })
+        console.log('Smash from DB:', passList)
+        store.dispatch({
+            type: SET_PASS_LIST,
+            passList
+        })
 
     } catch (err) {
         console.log('Cannot load monsters', err)

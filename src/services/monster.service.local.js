@@ -13,12 +13,16 @@ window.cs = monsterService
 
 _createMonsters()
 
-async function query(filterBy = { txt: '', price: 0 }) {
+async function query(filterBy = { choice: '' }) {
     var monsters = await storageService.query(STORAGE_KEY)
-    // if (filterBy.txt) {
-    //     const regex = new RegExp(filterBy.txt, 'i')
-    //     monsters = monsters.filter(monster => regex.test(monster.vendor) || regex.test(monster.description))
-    // }
+    if (filterBy.choice === 'smash') {
+        const regex = new RegExp(filterBy.choice, 'i')
+        monsters = monsters.filter(monster => regex.test(monster.sopChoice))
+    }
+    if (filterBy.choice === 'pass') {
+        const regex = new RegExp(filterBy.choice, 'i')
+        monsters = monsters.filter(monster => regex.test(monster.sopChoice))
+    }
     // if (filterBy.price) {
     //     monsters = monsters.filter(monster => monster.price <= filterBy.price)
     // }

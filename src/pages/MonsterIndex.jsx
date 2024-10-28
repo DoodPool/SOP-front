@@ -14,17 +14,6 @@ export function MonsterIndex() {
         loadMonsters()
     }, [])
 
-    // async function onAddMonster() {
-    //     const monster = monsterService.getEmptyMonster()
-    //     monster.vendor = prompt('Vendor?')
-    //     try {
-    //         const savedMonster = await addMonster(monster)
-    //         showSuccessMsg(`Monster added (id: ${savedMonster._id})`)
-    //     } catch (err) {
-    //         showErrorMsg('Cannot add monster')
-    //     }        
-    // }
-
     async function onUpdateMonster(monster) {
         const price = +prompt('New price?')
         const monsterToSave = { ...monster, price }
@@ -38,19 +27,15 @@ export function MonsterIndex() {
 
     return (
         <div>
-            {/* <h3>Monsters App</h3> */}
             <main>
-                <ul className="monster-list">
+                <ul className="monster-list clean-list">
                     {monsters.map(monster =>
                         <li className="monster-preview" key={monster.id}>
-                            <h1>{monster.name}</h1>
-                            <p>Game: {monster.game}</p>
                             <img src={monster.iconImg} alt="" />
-                        </li>)
-                    }
+                            <h3>{monster.name}</h3>
+                        </li>)}
                 </ul>
             </main>
-            <SopCounter />
         </div>
     )
 }
