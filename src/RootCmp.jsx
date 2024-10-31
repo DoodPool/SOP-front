@@ -8,6 +8,8 @@ import { AppFooter } from './cmps/AppFooter'
 import { AppMenu } from './cmps/AppMenu'
 import { useSelector } from 'react-redux'
 import { toggleMenu } from './store/system.actions'
+import Background from './cmps/Background'
+import backgroundFragment from './assets/shaders/nonsenseBc.frag'
 
 export function RootCmp() {
     const isMenuOpen = useSelector((storeState) => storeState.systemModule.isMenuOpen)
@@ -21,6 +23,7 @@ export function RootCmp() {
         <section>
             {isMenuOpen && <AppMenu onToggleMenu={onToggleMenu} />}
             <div className='app-container'>
+                <Background backgroundFragment={backgroundFragment} />
                 <AppHeader onToggleMenu={onToggleMenu} />
                 {/* <div className='side-bar'>side var</div> */}
                 {/* <div className='main'>main</div> */}

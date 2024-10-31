@@ -2,30 +2,33 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-inline: 7rem;
-    margin-block-start: 3rem;
+    margin-block-start: 2rem;
 
     h1 {
         font-size: 3rem;
         text-transform: capitalize;
         text-align: center;
+        padding-block-end: 3rem;
 
         grid-column: 1 / -1;
     }
     
     p {
-        font-size: 2.5rem;
+        font-size: 2.55rem;
+        font-weight: 700;
     }
     
     ul {
-        font-size: 1.75rem;
+        font-size: 1.7rem;
+        margin-block-start: 1rem;
+        margin-inline-start: 2rem;
 
         li {
-            padding-block-end: 1rem;
+            padding-block-end: 1.5rem;
         }
     }
 
     img {
         width: 100%;
-
     }
 }

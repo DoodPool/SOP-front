@@ -9,7 +9,7 @@ html {
     background-color: #121212;
 }
 
-img {   
+img {
     width: 100px;
 }
 
@@ -41,14 +41,25 @@ img {
     grid-area: footer;
 }
 
+#background {
+    position: fixed;
+    display: block;
+
+    // background-color: 'white';
+    height: 100%;
+    width: 100%;
+
+    z-index: -10;
+}
+
 @keyframes slide-in {
     0% {
-      transform: translateY(-50%);
-      opacity: 0;
+        transform: translateY(-50%);
+        opacity: 0;
     }
-  
+
     100% {
-      transform: translateY(0%);
-      opacity: 1;
+        transform: translateY(0%);
+        opacity: 1;
     }
-  }
+}
