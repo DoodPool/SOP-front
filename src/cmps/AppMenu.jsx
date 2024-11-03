@@ -32,6 +32,8 @@ export function AppMenu({ onToggleMenu }) {
             </div>
 
             <nav className="flex column">
+                <img className="mh6-logo" src="../src/assets/img/mh6-logo.webp" alt="mh6-logo" />
+
                 <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
                 <p className="pointer" onClick={() => onResults()}>results</p>
                 <p className="pointer" onClick={() => onChallenge()}>Extra Challenge</p>

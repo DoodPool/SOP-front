@@ -37,6 +37,21 @@
         flex-grow: 1;
 
         animation: slide-in .5s;
+
+        p:hover {
+            transition: 0.2s;
+            color: lighten($color: black, $amount: 65);
+            scale: 1.025;
+        }
+    }
+
+    .mh6-logo {
+        position: fixed;
+        height: 650px;
+        width: auto;
+
+        opacity: .25;
+        z-index: -1;
     }
 
     p {

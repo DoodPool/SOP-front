@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useNavigate } from "react-router"
 
 export function ExtraChallenge() {
@@ -18,7 +19,7 @@ export function ExtraChallenge() {
                     <li>If possible you hunt the tempered version of the monster</li>
                 </ul>
                 <p>-CodingCorvus</p>
-                <button onClick={() => navigate('/results')}>Results</button>
+                <button onClick={() => navigate('/results')}>Results <span><FontAwesomeIcon icon="fa-solid fa-arrow-right" /></span></button>
             </article>
             <img src="../src/assets/img/challenge-img.png" alt="rai-pfp" />
         </section >

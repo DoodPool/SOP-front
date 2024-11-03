@@ -1,6 +1,6 @@
 .monster-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 10px;
     padding-block: 3rem;
     padding-inline: 2rem;
@@ -11,19 +11,25 @@
         padding: 10px;
         // background-color: $clr2;
         color: $clr4;
+        cursor: pointer;
 
-        width: 250px;
-        height: 260px;
-        
+        // width: 350px;
+        min-height: 450px;
+        transition: .2s;
+
         img {
-            min-width: 100%;
-            height: auto;
-            // margin-block-end: auto;
+            width: 100%;
+            // height: auto;
+            margin-block: auto;
         }
-        
+
         h3 {
             text-align: center;
-            margin-block-start: auto;
+            // margin-block-start: auto;
+        }
+
+        &:hover {
+            filter: drop-shadow(0 0 2rem white);
         }
     }
 }

@@ -45,11 +45,13 @@ img {
     position: fixed;
     display: block;
 
-    // background-color: 'white';
+    // background-color: white;
+    // background-color: #212121;
     height: 100%;
     width: 100%;
 
     z-index: -10;
+    // opacity: .05;
 }
 
 @keyframes slide-in {

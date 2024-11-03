@@ -149,7 +149,8 @@ function _createMonsters() {
                 id: '115',
                 name: 'Rathalos',
                 game: 'MHW',
-                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729013108/MH-sop/MHW/piulpaqwogwq29azog36.png',
+                // iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729013108/MH-sop/MHW/piulpaqwogwq29azog36.png',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730646492/MH-sop/MHW/zvfmfyc6ad1oaixopqjl.webp',
                 sopChoice: null,
             },
             {
@@ -177,7 +178,8 @@ function _createMonsters() {
                 id: '119',
                 name: 'Lavasioth',
                 game: 'MHW',
-                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729012959/MH-sop/MHW/hnjqaeimmvihyustejmr.webp',
+                // iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729012959/MH-sop/MHW/hnjqaeimmvihyustejmr.webp',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730646480/MH-sop/MHW/nfixvrk5x908dcilkq5m.png',
                 sopChoice: null,
             },
             {
@@ -191,7 +193,8 @@ function _createMonsters() {
                 id: '121',
                 name: 'Azure Rathalos',
                 game: 'MHW',
-                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729012991/MH-sop/MHW/syajr0imtuonbxgnryv3.webp',
+                // iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729012991/MH-sop/MHW/syajr0imtuonbxgnryv3.webp',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730646491/MH-sop/MHW/cwovnyg7m2w7r88sceqv.webp',
                 sopChoice: null,
             },
             {

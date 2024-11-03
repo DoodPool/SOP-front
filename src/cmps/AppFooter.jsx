@@ -3,20 +3,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export function AppFooter() {
 
     return (
-        <footer className="app-footer footer">
-            <img className="logo" src="../src/assets/img/mh-logo.png" alt="rai-pfp" />
+        <section className="footer">
+            <svg className="footer-decor" viewBox="0 25 1727 58" fill="none" preserveAspectRatio="none">
+                <path fill="#000" d="M0 0h1727v42L864 58l10.5-16L0 58V0Z"></path>
+            </svg>
+            <footer className="app-footer">
+                {/* <img className="logo" src="../src/assets/img/mh-logo.png" alt="rai-pfp" /> */}
+                <article>
+                    <p>Made by - DoodPool</p>
+                    <p>Monster Hunter: Smash or Pass</p>
+                </article>
 
-            <p>Made by DoodPool</p>
+                <div className="social-links-container">
+                    <img src="../src/assets/img/rai-pfp.jpg" alt="rai-pfp" />
 
-            <div className="social-links-container">
-                <img src="../src/assets/img/rai-pfp.jpg" alt="rai-pfp" />
-
-                <div className="links clean-list flex justify-center">
-                    <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
-                    <a href=""><FontAwesomeIcon icon="fa-brands fa-discord" /></a> {/* Need url from rai */}
-                    <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
+                    <div className="links clean-list flex justify-center">
+                        <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
+                        <a href=""><FontAwesomeIcon icon="fa-brands fa-discord" /></a> {/* Need url from rai */}
+                        <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
+                    </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </section>
     )
 }
