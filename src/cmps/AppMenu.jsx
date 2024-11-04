@@ -10,7 +10,7 @@ export function AppMenu({ onToggleMenu }) {
     }
 
     function onMonsterList() {
-        navigate('/monster')
+        navigate('/monsters')
         onToggleMenu(false)
     }
 

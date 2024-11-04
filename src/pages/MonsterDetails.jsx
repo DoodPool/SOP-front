@@ -27,7 +27,7 @@ export function MonsterDetails() {
             setCurrMonster(monster)
         } catch (err) {
             console.log('Had issues loading monster', err)
-            navigate('/monster')
+            navigate('/monsters')
         }
     }
 
@@ -56,9 +56,12 @@ export function MonsterDetails() {
             <SopCounter />
 
             <div className='main-info'>
-                <h1>{currMonster.game}: {currMonster.name}</h1>
-                {/* <p>choice: {currMonster.sopChoice}</p> */}
-                <img src={currMonster.iconImg} alt="" />
+                <div className='flex'>
+                    {currMonster.game === 'MHW' && <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />}
+                    {currMonster.game === 'MHWIB' && <img src="../src/assets/img/MHWIB.png" alt="mhwib" />}
+                    <h1>{currMonster.game}: {currMonster.name}</h1>
+                </div>
+                <img className='curr-monster' src={currMonster.iconImg} alt="" />
 
                 <div className='sop-btns'>
                     <button className='btn smash-btn' onClick={() => setSopChoice('smash')}>Smash</button>

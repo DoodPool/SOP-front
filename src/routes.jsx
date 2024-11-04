@@ -12,7 +12,7 @@ const routes = [
         label: 'Home',
     },
     {
-        path: 'monster',
+        path: 'monsters',
         component: <MonsterIndex />,
         label: 'Monsters'
     },

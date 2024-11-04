@@ -1,35 +1,73 @@
 .challenge-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-inline: 7rem;
-    margin-block-start: 2rem;
+    margin-inline: 6.5rem;
+    margin-block-start: 1.5rem;
+    // height: 100%;
+
+
+
 
     h1 {
         font-size: 3rem;
         text-transform: capitalize;
         text-align: center;
-        padding-block-end: 3rem;
+        margin-block-end: 2rem;
+        // height: 0;
+        // padding-block-end: 1.5rem;
 
         grid-column: 1 / -1;
     }
-    
-    p {
-        font-size: 2.55rem;
-        font-weight: 700;
-    }
-    
-    ul {
-        font-size: 1.7rem;
-        margin-block-start: 1rem;
-        margin-inline-start: 2rem;
 
-        li {
-            padding-block-end: 1.5rem;
+    .rules {
+        display: flex;
+        flex-direction: column;
+        margin-inline-end: 2rem;
+        // height: 100%;
+        // background-color: red;
+
+        p {
+            font-size: 2.55rem;
+            font-weight: 700;
         }
-    }
 
-    button {
-        margin-block-start: auto;
+        p:last-of-type {
+            font-size: 1.5rem;
+            font-weight: 400;
+            padding-block-start: .5rem;
+        }
+
+
+        ul {
+            text-align: start;
+            font-size: 1.7rem;
+            margin-block-start: 1.25rem;
+            margin-inline-start: 2rem;
+
+            li {
+                padding-block-end: 1.5rem;
+            }
+        }
+
+        button {
+            // display: flex;
+            margin-block-start: auto;
+            margin-inline-end: auto;
+
+            font-size: 1.5rem;
+            border: none;
+            // border-bottom: 1px $clr4 solid;
+            background-color: inherit;
+            color: $clr4;
+
+            cursor: pointer;
+            
+            &:hover span {
+                transition: .2s;
+                padding-inline-start: .25rem;
+
+            }
+        }
     }
 
     img {
