@@ -56,16 +56,17 @@ export function MonsterDetails() {
             <SopCounter />
 
             <div className='main-info'>
-                <div className='flex'>
+                {/* <div className='monster-name'>
                     {currMonster.game === 'MHW' && <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />}
-                    {currMonster.game === 'MHWIB' && <img src="../src/assets/img/MHWIB.png" alt="mhwib" />}
-                    <h1>{currMonster.game}: {currMonster.name}</h1>
-                </div>
+                    {currMonster.game === 'MHWIB' && <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />}
+                </div> */}
+                <h1>{currMonster.game}: {currMonster.name}</h1>
+
                 <img className='curr-monster' src={currMonster.iconImg} alt="" />
 
                 <div className='sop-btns'>
-                    <button className='btn smash-btn' onClick={() => setSopChoice('smash')}>Smash</button>
-                    <button className='btn pass-btn' onClick={() => setSopChoice('pass')}>pass</button>
+                    <button className={`btn smash-btn ${currMonster.sopChoice === "smash" ? " smash-choice" : ""}`} onClick={() => setSopChoice('smash')}>Smash</button>
+                    <button className={`btn pass-btn ${currMonster.sopChoice === "pass" ? " pass-choice" : ""}`} onClick={() => setSopChoice('pass')}>Pass</button>
                 </div>
             </div>
         </section >

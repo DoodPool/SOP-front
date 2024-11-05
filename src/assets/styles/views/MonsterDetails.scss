@@ -8,12 +8,31 @@
     .counter-container {
         align-self: end;
         justify-self: center;
-        margin-block-end: 2rem;
+        // margin-block-end: 2rem;
     }
 
     .main-info {
         display: flex;
         flex-direction: column;
+
+        // .monster-name {
+        //     display: grid;
+        //     grid-template-columns: repeat(3, 1fr);
+        //     align-self: center;
+        //     margin-block-start: 3rem;
+        //     margin-block-end: 1rem;
+        //     // justify-self: center;
+        // }
+
+
+        .game-logo {
+            height: auto;
+            width: 13rem;
+            align-self: center;
+            margin-inline-end: .5rem;
+            justify-self: end;
+
+        }
 
         .curr-monster {
             max-height: 450px;
@@ -21,22 +40,23 @@
             margin-inline: auto;
         }
 
-        .game-logo {
-            height: 5rem;
-        }
-
         h1 {
             color: $clr4;
             text-align: center;
-            font-size: 3rem;
-            margin-block-start: 1rem;
+            align-self: center;
+            font-size: 2.85rem;
+            margin: auto;
+            // grid-column: 2 / -1;
+            margin-block-start: 4rem;
+            margin-block-end: 4rem;
         }
     }
 }
 
 .sop-btns {
     margin-inline: auto;
-    margin-block-end: 1rem; 
+    margin-block-end: .5rem;
+    margin-block-start: auto;
 
     &>* {
         margin-inline: 0.5rem;
@@ -45,10 +65,16 @@
 
 .smash-btn {
     @include sop-btn($clr: #67C23A, $percentage: 45%);
-    // margin-inline-end: 5px;
+}
+
+.smash-choice {
+    @include btn-choice($clr: #67C23A);
 }
 
 .pass-btn {
     @include sop-btn($clr: #F56C6C, $percentage: 25%);
-    // margin-inline-end: 5px;
+}
+
+.pass-choice {
+    @include btn-choice($clr: #F56C6C);
 }

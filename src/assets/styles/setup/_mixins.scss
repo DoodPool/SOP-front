@@ -81,3 +81,9 @@
         color: black;
     }
 }
+
+@mixin btn-choice($clr) {
+        background-color: $clr;
+        border-color: $clr;
+        color: black;
+}

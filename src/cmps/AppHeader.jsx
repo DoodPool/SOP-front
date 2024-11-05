@@ -13,7 +13,7 @@ export function AppHeader({ onToggleMenu }) {
 
     function setHeaderClass() {
         let path = location.pathname
-        if (path.includes('monsters') || path.includes('results')) {
+        if (path.includes('monster') || path.includes('results')) {
             setDynamicClass('fixed')
         } else {
             setDynamicClass('sticky')
