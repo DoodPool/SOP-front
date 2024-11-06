@@ -37,8 +37,11 @@ export function MonsterIndex() {
                 <ul className="monster-list clean-list">
                     {monsters.map(monster =>
                         <li className="monster-preview" key={monster.id} onClick={() => onMonster(monster.id)}>
-                            <img src={monster.iconImg} alt="" />
-                            <h3>{monster.name}</h3>
+                            {monster.isHidden && <img src="https://tiermaker.com/images/chart/chart/final-bosses-tier-list-monster-hunter-171616/1stgen-questionmarkiconpng.png" alt="" />}
+                            {monster.isHidden && <h3>???</h3>}
+
+                            {!monster.isHidden && <img src={monster.iconImg} alt="" />}
+                            {!monster.isHidden && <h3>{monster.name}</h3>}
                         </li>)}
                 </ul>
             </main>

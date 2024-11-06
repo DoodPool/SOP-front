@@ -32,7 +32,11 @@ export function MonsterDetails() {
     }
 
     async function setSopChoice(choice) {
-        const updatedMon = { ...currMonster, 'sopChoice': choice }
+        let updatedMon = { ...currMonster, 'sopChoice': choice }
+        if (updatedMon.isHidden) {
+            updatedMon.isHidden = !updatedMon.isHidden
+        }
+
         // console.log('updatedMon', updatedMon);
         await updateMonster(updatedMon)
 

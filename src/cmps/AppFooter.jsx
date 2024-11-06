@@ -8,11 +8,13 @@ export function AppFooter() {
                 <path fill="#000" d="M0 0h1727v42L864 58l10.5-16L0 58V0Z"></path>
             </svg>
             <footer className="app-footer">
-                {/* <img className="logo" src="../src/assets/img/mh-logo.png" alt="rai-pfp" /> */}
                 <article>
-                    <p>Made by - DoodPool</p>
-                    <p>Monster Hunter: Smash or Pass</p>
+                    <p>Monster Hunter</p>
+                    <p>Smash or Pass</p>
+                    <img className="logo" src="../src/assets/img/mh6-logo.webp" alt="rai-pfp" />
                 </article>
+
+                <p className="credit">Made by - DoodPool</p>
 
                 <div className="social-links-container">
                     <img src="../src/assets/img/rai-pfp.jpg" alt="rai-pfp" />

@@ -2,28 +2,56 @@
 
 .app-footer {
     display: grid;
-    // grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(2, 1fr);
     // background-color: #212121;
     background-color: black;
     padding-block-end: 1rem;
     padding-inline: 1.5rem;
 
-    .logo {
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
-        width: 12rem;
+    .credit {
+        align-self: end;
+        justify-self: center;
+        opacity: .45;
     }
 
     article {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        padding-block: .5rem;
+        width: 18rem;
+        align-self: center;
+        justify-self: start;
+        // padding-block: .5rem;
+        cursor: default;
+        user-select: none;
+
 
         p {
-            text-align: start;
+            text-align: center;
             color: white;
+            font-family: superital, monospace;
+            letter-spacing: .10rem;
+            z-index: 1;
+        }
+
+        p:nth-of-type(1) {
+            font-size: 2.25rem;
+        }
+
+        p:nth-of-type(2) {
+            font-size: 1.35rem;
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 10px;
+            left: 210px;
+
+            width: 5rem;
+            opacity: .75;
+
+            // -webkit-filter: invert(100%);
+            // filter: invert(100%);
         }
     }
 

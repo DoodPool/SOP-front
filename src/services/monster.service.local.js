@@ -526,6 +526,30 @@ function _createMonsters() {
                 iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1729013108/MH-sop/MHW/u5mfrqkpcbtqqwiunvp6.png',
                 sopChoice: null,
             },
+            {
+                id: '169',
+                name: 'Khezu',
+                game: 'MH-Freedom2',
+                iconImg: 'https://www.mandatory.gg/wp-content/uploads/mandatory-mhrise-guides-monstres-khezu.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '170',
+                name: 'Doshaguma',
+                game: 'Wilds',
+                iconImg: 'https://www.monsterhunter.com/wilds/assets/img/monster/m_img_02_s.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '171',
+                name: 'Ajarakan',
+                game: 'MHWIB',
+                iconImg: 'https://www.monsterhunter.com/wilds/assets/img/monster/m_img_10_s.png',
+                sopChoice: null,
+                isHidden: true,
+            },
         ]
         utilService.saveToStorage(STORAGE_KEY, monsters)
     }
@@ -533,3 +557,169 @@ function _createMonsters() {
 
 // TEST DATA
 // storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
+
+// 1: Khezu - MH-Freedom
+// 2: Doshaguma - Wilds
+// 3: Ajarakan - wilds
+// 4: Valstrax - GU
+// 5: Gore Magala - 4U
+// 6: Malzeno - RiseSB
+// 7: Congalala - F2
+// 8: Lagiacrus - Tri
+// 9: Nibelsnarf - TriU
+// 10
+// 11
+// 12
+// 13
+// 14
+// 15
+// 16
+// 17
+// 18
+// 19
+// 20
+// 21
+// 22
+// 23
+// 24
+// 25
+// 26
+// 27
+// 28
+// 29
+// 30
+// 31
+// 32
+// 33
+// 34
+// 35
+// 36
+// 37
+// 38
+// 39
+// 40
+// 41
+// 42
+// 43
+// 44
+// 45
+// 46
+// 47
+// 48
+// 49
+// 50
+
+
+// MH1 / MHF1: Monsters: //////////
+// Basarios
+// Cephadrome
+// Gendrome
+// Gravios
+// Gypceros
+// Iodrome
+// Lao-Shan Lung
+// Monoblos
+// Plesioth
+// Velocidrome
+// Yian Kut-Ku
+
+// MHF2: Monsters: //////////
+// Akantor
+// Daimyo Hermitaur
+// Shogun Ceanataur
+// Shen Gaoren
+// Bulldrome
+// Congalala ---
+// Blangonga
+// Chameleos
+// Crimson Fatalis
+// White Fatalis
+
+// MHFU: Monsters:
+// Ukanlos
+// Yama Tsukami
+
+// MH3: Monsters: //////////
+// Agnaktor
+// Gigginox
+// Gobul
+// Great Baggi
+// Great Jaggi
+// Lagiacrus ---
+// Qurupeco
+// Royal Ludroth
+// Ceadeus
+// Jhen Mohran
+
+// MH3U: Monsters: //////////
+// Arzuros
+// Dire Miralis
+// Duramboros
+// Great Wroggi
+// Lagombi
+// Nibelsnarf ---
+
+// MH4U: Monsters: //////////
+// Gore Magala ---
+// Kecha Wacha
+// Najarala
+// Nerscylla
+// Seltas
+// Seltas Queen
+// Seregios
+// Tetsucabra
+// Zamtrios
+// Dah'ren Mohran
+// Dalamadur
+// Gogmazios
+// Shagaru Magala
+
+// MHGen: Monsters: //////////
+// Astalos
+// Gammoth
+// Great Maccao
+// Malfestio
+// Mizutsune
+// Volvidon
+// Amatsu
+// Nakarkos
+
+// MHGU: Monsters: //////////
+// Ahtal-Ka
+// Valstrax ---
+
+// MHRise: Monsters: //////////
+// Aknosom
+// Almudron
+// Bishaten
+// Goss Harag
+// Magnamalo
+// Rakna-Kadaki
+// Somnacanth
+// Tetranadon
+// Thunder Serpent Narwa
+// Wind Serpent Ibushi
+
+// MHRiseSB: Monsters: //////////
+// Malzeno --- 
+// Lunagaron
+// Garangolm
+// Espinas
+// Gaismagorm
+// Espinas
+
+// MHWilds: Monsters: //////////
+// Arkveld
+// Rompopolo
+// Ajarakan --- 
+// Uth Duna
+// Lala Barina
+// Rey Dau
+// Balahara
+// Quematrice
+// Doshaguma ---
+// Chatacabra
+
+// finish home page
+// add extra monsters 
+// add backend
