@@ -545,8 +545,680 @@ function _createMonsters() {
             {
                 id: '171',
                 name: 'Ajarakan',
-                game: 'MHWIB',
+                game: 'Wilds',
                 iconImg: 'https://www.monsterhunter.com/wilds/assets/img/monster/m_img_10_s.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '172',
+                name: 'Basarios',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/oygyckkh0ivbj4o4dykn.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '173',
+                name: 'Cephadrome',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/wjub9yjif8pxf4q0gwm0.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '174',
+                name: 'Gendrome',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/q7bsea2y6g47xbxmvb4t.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '175',
+                name: 'Gravios',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993930/MH-sop/MH1/orwrrn58u4migotbfm5d.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '176',
+                name: 'Gypceros',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993930/MH-sop/MH1/kimdnvp2smptlet83k5w.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '177',
+                name: 'Iodrome',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994753/MH-sop/MH1/rbwunvialw4pwc2ouf8p.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '178',
+                name: 'Lao-Shan Lung',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993930/MH-sop/MH1/lsprzeh8fuar7rnvwhjq.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '179',
+                name: 'Monoblos',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/kiv57ixlvkriicy6qayu.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '180',
+                name: 'Plesioth',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993930/MH-sop/MH1/uchwaamzc88hgzbc1ggs.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '181',
+                name: 'Velocidrome',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/ja4hj7dav6ifq61iutab.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '182',
+                name: 'Yian Kut-Ku',
+                game: 'MH1',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730993929/MH-sop/MH1/e2jryvnl8ruetrojbery.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '183',
+                name: 'Akantor',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994882/MH-sop/MHF2/ybrh2chmulxvo7uptr3n.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '184',
+                name: 'Daimyo Hermitaur',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994882/MH-sop/MHF2/e1x3axwzevhyrcunfl2r.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '185',
+                name: 'Shogun Ceanataur',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994880/MH-sop/MHF2/x0xzqlksqxnxrmbohzlt.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '186',
+                name: 'Shen Gaoren',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994878/MH-sop/MHF2/eglcc6uc1wwxebulzc0q.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '187',
+                name: 'Bulldrome',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994880/MH-sop/MHF2/pr9qrqbwpvtuwv40f2qs.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '188',
+                name: 'Congalala',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994880/MH-sop/MHF2/uc39sxgzphiwm7ueh4qu.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '189',
+                name: 'Blangonga',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994879/MH-sop/MHF2/tycocpxfuhuymdhllbhg.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '190',
+                name: 'Chameleos',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994880/MH-sop/MHF2/eomaj9v5zogvih821qtt.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '191',
+                name: 'Crimson Fatalis',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994879/MH-sop/MHF2/byjnsvq19ywsi0jnflao.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '192',
+                name: 'White Fatalis',
+                game: 'MHF2',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730994879/MH-sop/MHF2/quafbvaahuasua6jmm49.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '193',
+                name: 'Ukanlos',
+                game: 'MHFU',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730995277/MH-sop/MHFU/a0domssnmkqrzqipfqy8.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '194',
+                name: 'Yama Tsukami',
+                game: 'MHFU',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1730995186/MH-sop/MHFU/wed4uckghnkvz3mpnyov.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '195',
+                name: 'Agnaktor',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000451/MH-sop/MH3/stznonckt4dtse7btlr3.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '196',
+                name: 'Gigginox',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000450/MH-sop/MH3/xyilvs9bxu6639owsger.webp',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '197',
+                name: 'Gobul',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000452/MH-sop/MH3/usnp6x9mxgrcvh5xjdch.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '198',
+                name: 'Great Baggi',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000457/MH-sop/MH3/mrnlbi9alvziaonzyjap.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '199',
+                name: 'Lagiacrus',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000452/MH-sop/MH3/kpeqb0ixip4lnqisi2yn.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '200',
+                name: 'Qurupeco',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000454/MH-sop/MH3/oci4ztpau5rifg5q7il7.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '201',
+                name: 'Royal Ludroth',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000456/MH-sop/MH3/vsjkwoldafauzf5alf3a.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '202',
+                name: 'Ceadeus',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000452/MH-sop/MH3/zxvdrilkixgi1ruhgham.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '203',
+                name: 'Jhen Mohran',
+                game: 'MH3',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000459/MH-sop/MH3/sah2rnxwyey5ahyrgitp.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '204',
+                name: 'Arzuros',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000741/MH-sop/MH3U/ktehrikq9xtghr2sve0m.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '205',
+                name: 'Dire Miralis',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000731/MH-sop/MH3U/nureohhebm0h3eacl6if.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '206',
+                name: 'Duramboros',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000731/MH-sop/MH3U/drwhajg993dqc1ypsemn.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '207',
+                name: 'Great Wroggi',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000734/MH-sop/MH3U/bdlfeabytufbnzhfymy9.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '208',
+                name: 'Lagombi',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000737/MH-sop/MH3U/k4yj3aktd3sojsika9qo.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '209',
+                name: 'Nibelsnarf',
+                game: 'MH3U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731000731/MH-sop/MH3U/stn1ujbyyutisf86m4hk.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '210',
+                name: 'Gore Magala',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001394/MH-sop/MH4U/gsjj0bcgkjrfojqllbn5.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '211',
+                name: 'Kecha Wacha',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001105/MH-sop/MH4U/ewrv8rh6jfzuw6bgmcm3.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '212',
+                name: 'Najarala',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001105/MH-sop/MH4U/kzx2cpe9urvco4viwnxg.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '213',
+                name: 'Nerscylla',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001104/MH-sop/MH4U/nbzjehi3qvdkrezs22fq.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '214',
+                name: 'Seltas',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001104/MH-sop/MH4U/malaj3d5nogfyhlh1sdj.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '215',
+                name: 'Seltas Queen',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001105/MH-sop/MH4U/uhg6xjolxsid7ocjqf3n.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '216',
+                name: 'Seregios',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001109/MH-sop/MH4U/we8xcft4xlngycb42lvk.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '217',
+                name: 'Tetsucabra',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001115/MH-sop/MH4U/hrbaolrbqejgujdwdhxq.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '218',
+                name: 'Zamtrios',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001106/MH-sop/MH4U/xrczpionduflx3rvuvyd.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '219',
+                name: `Dah'ren Mohran`,
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001104/MH-sop/MH4U/hkfeyzgmuhfffzzdjpzu.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '220',
+                name: 'Dalamadur',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001533/MH-sop/MH4U/vi2bdn7njsnmoekefats.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '221',
+                name: 'Gogmazios',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001107/MH-sop/MH4U/ndkebtmj1jxsrc8zuro5.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '222',
+                name: 'Shagaru Magala',
+                game: 'MH4U',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001107/MH-sop/MH4U/x7finssmggykpyrxpelp.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '223',
+                name: 'Astalos',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001334/MH-sop/MHGen/cy8rvq1eka953vyndxqf.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '224',
+                name: 'Gammoth',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001333/MH-sop/MHGen/ro6xdql2cjvg31fz4ppj.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '225',
+                name: 'Great Maccao',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001333/MH-sop/MHGen/vxavsn4yvkpp6bwz73ea.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '226',
+                name: 'Malfestio',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001333/MH-sop/MHGen/jeahrtmdk5fojqujffuh.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '227',
+                name: 'Mizutsune',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001339/MH-sop/MHGen/cbdldieglngink9gz33z.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '228',
+                name: 'Volvidon',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001342/MH-sop/MHGen/oekffmnszhzplofnle8d.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '229',
+                name: 'Amatsu',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001340/MH-sop/MHGen/keznqtfr2ivssbi9acel.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '230',
+                name: 'Nakarkos',
+                game: 'MHGen',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001336/MH-sop/MHGen/q8mb5xcmynwfxgvfj5rd.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '231',
+                name: 'Ahtal-Ka',
+                game: 'MHGU',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001896/MH-sop/MHGU/d28lz3nvqnarkqjbdudg.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '232',
+                name: 'Valstrax',
+                game: 'MHGU',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731001898/MH-sop/MHGU/uec1otjivcnhak29snul.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '233',
+                name: 'Aknosom',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002072/MH-sop/MHRise/wzvwtojkl8jzue5qpsle.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '234',
+                name: 'Almudron',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002078/MH-sop/MHRise/ie8p0x7dy4ejtxfqrltx.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '235',
+                name: 'Bishaten',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002073/MH-sop/MHRise/artgsyu34a7mkptbihjd.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '236',
+                name: 'Goss Harag',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002074/MH-sop/MHRise/jxrwrkexpsvxfby3kvyj.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '237',
+                name: 'Magnamalo',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002075/MH-sop/MHRise/ennzuwe4wqevncnaxhp1.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '238',
+                name: 'Rakna-Kadaki',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002079/MH-sop/MHRise/rktumx1ymbuij6ilckgg.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '239',
+                name: 'Somnacanth',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002078/MH-sop/MHRise/nc8vs2196cm5n1avjlt8.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '240',
+                name: 'Tetranadon',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002074/MH-sop/MHRise/m8b8jbbvvayjnndwjiqg.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '241',
+                name: 'Thunder Serpent Narwa',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002076/MH-sop/MHRise/mmumrhontf7jqpkzxvh3.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '242',
+                name: 'Wind Serpent Ibushi',
+                game: 'MHRise',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002078/MH-sop/MHRise/pkgure0rvmantxaax6it.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '243',
+                name: 'Malzeno',
+                game: 'MHRiseSB',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002429/MH-sop/MHRiseSB/eslu1lapv03a7uerqy32.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '244',
+                name: 'Lunagaron',
+                game: 'MHRiseSB',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002431/MH-sop/MHRiseSB/kjvf2mxdqybqdr0ja61b.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '245',
+                name: 'Garangolm',
+                game: 'MHRiseSB',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002428/MH-sop/MHRiseSB/eaahifw5buy3jjfhi0as.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '246',
+                name: 'Espinas',
+                game: 'MHRiseSB',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002429/MH-sop/MHRiseSB/lcfvyg8qij8q0mhn95ap.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '247',
+                name: 'Gaismagorm',
+                game: 'MHRiseSB',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002431/MH-sop/MHRiseSB/wco85gi1kfn4mdijbmxq.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '248',
+                name: 'Arkveld',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002687/MH-sop/Wilds/r2jpe6a200mppw2zk565.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '249',
+                name: 'Rompopolo',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002691/MH-sop/Wilds/npfaifugud7umyjw8rou.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '250',
+                name: 'Uth Duna',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002696/MH-sop/Wilds/dufwp6dsrdyhjynfnp8w.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '251',
+                name: 'Lala Barina',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002688/MH-sop/Wilds/bz6dqj8g2zaggnfvjamk.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '252',
+                name: 'Rey Dau',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002689/MH-sop/Wilds/grgbbyeujjw9xivcxgx7.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '253',
+                name: 'Balahara',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002685/MH-sop/Wilds/khyf8a0dufbqnryxltt1.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '254',
+                name: 'Quematrice',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002693/MH-sop/Wilds/fhqgtoaey0upw5acpx5y.png',
+                sopChoice: null,
+                isHidden: true,
+            },
+            {
+                id: '255',
+                name: 'Chatacabra',
+                game: 'Wilds',
+                iconImg: 'https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731002685/MH-sop/Wilds/y4rgwxibebamiayvrqrh.png',
                 sopChoice: null,
                 isHidden: true,
             },
@@ -557,168 +1229,6 @@ function _createMonsters() {
 
 // TEST DATA
 // storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
-
-// 1: Khezu - MH-Freedom
-// 2: Doshaguma - Wilds
-// 3: Ajarakan - wilds
-// 4: Valstrax - GU
-// 5: Gore Magala - 4U
-// 6: Malzeno - RiseSB
-// 7: Congalala - F2
-// 8: Lagiacrus - Tri
-// 9: Nibelsnarf - TriU
-// 10
-// 11
-// 12
-// 13
-// 14
-// 15
-// 16
-// 17
-// 18
-// 19
-// 20
-// 21
-// 22
-// 23
-// 24
-// 25
-// 26
-// 27
-// 28
-// 29
-// 30
-// 31
-// 32
-// 33
-// 34
-// 35
-// 36
-// 37
-// 38
-// 39
-// 40
-// 41
-// 42
-// 43
-// 44
-// 45
-// 46
-// 47
-// 48
-// 49
-// 50
-
-
-// MH1 / MHF1: Monsters: //////////
-// Basarios
-// Cephadrome
-// Gendrome
-// Gravios
-// Gypceros
-// Iodrome
-// Lao-Shan Lung
-// Monoblos
-// Plesioth
-// Velocidrome
-// Yian Kut-Ku
-
-// MHF2: Monsters: //////////
-// Akantor
-// Daimyo Hermitaur
-// Shogun Ceanataur
-// Shen Gaoren
-// Bulldrome
-// Congalala ---
-// Blangonga
-// Chameleos
-// Crimson Fatalis
-// White Fatalis
-
-// MHFU: Monsters:
-// Ukanlos
-// Yama Tsukami
-
-// MH3: Monsters: //////////
-// Agnaktor
-// Gigginox
-// Gobul
-// Great Baggi
-// Great Jaggi
-// Lagiacrus ---
-// Qurupeco
-// Royal Ludroth
-// Ceadeus
-// Jhen Mohran
-
-// MH3U: Monsters: //////////
-// Arzuros
-// Dire Miralis
-// Duramboros
-// Great Wroggi
-// Lagombi
-// Nibelsnarf ---
-
-// MH4U: Monsters: //////////
-// Gore Magala ---
-// Kecha Wacha
-// Najarala
-// Nerscylla
-// Seltas
-// Seltas Queen
-// Seregios
-// Tetsucabra
-// Zamtrios
-// Dah'ren Mohran
-// Dalamadur
-// Gogmazios
-// Shagaru Magala
-
-// MHGen: Monsters: //////////
-// Astalos
-// Gammoth
-// Great Maccao
-// Malfestio
-// Mizutsune
-// Volvidon
-// Amatsu
-// Nakarkos
-
-// MHGU: Monsters: //////////
-// Ahtal-Ka
-// Valstrax ---
-
-// MHRise: Monsters: //////////
-// Aknosom
-// Almudron
-// Bishaten
-// Goss Harag
-// Magnamalo
-// Rakna-Kadaki
-// Somnacanth
-// Tetranadon
-// Thunder Serpent Narwa
-// Wind Serpent Ibushi
-
-// MHRiseSB: Monsters: //////////
-// Malzeno --- 
-// Lunagaron
-// Garangolm
-// Espinas
-// Gaismagorm
-// Espinas
-
-// MHWilds: Monsters: //////////
-// Arkveld
-// Rompopolo
-// Ajarakan --- 
-// Uth Duna
-// Lala Barina
-// Rey Dau
-// Balahara
-// Quematrice
-// Doshaguma ---
-// Chatacabra
 
 // finish home page
 // add extra monsters 

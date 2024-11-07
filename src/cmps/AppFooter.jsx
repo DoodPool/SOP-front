@@ -11,7 +11,7 @@ export function AppFooter() {
                 <article>
                     <p>Monster Hunter</p>
                     <p>Smash or Pass</p>
-                    <img className="logo" src="../src/assets/img/mh6-logo.webp" alt="rai-pfp" />
+                    {/* <img className="logo" src="../src/assets/img/mh6-logo.webp" alt="rai-pfp" /> */}
                 </article>
 
                 <p className="credit">Made by - DoodPool</p>
@@ -21,7 +21,7 @@ export function AppFooter() {
 
                     <div className="links clean-list flex justify-center">
                         <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
-                        <a href=""><FontAwesomeIcon icon="fa-brands fa-discord" /></a> {/* Need url from rai */}
+                        <a href="https://discord.gg/cmftvxSzMK"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
                         <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
                     </div>
                 </div>

@@ -41,7 +41,7 @@ export function AppMenu({ onToggleMenu }) {
 
             <div className="links clean-list flex justify-center">
                 <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
-                <a href=""><FontAwesomeIcon icon="fa-brands fa-discord" /></a> {/* Need url from rai */}
+                <a href="https://discord.gg/cmftvxSzMK"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
                 <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
             </div>
         </section>
