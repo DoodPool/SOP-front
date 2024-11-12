@@ -1,4 +1,5 @@
 export const SET_MONSTERS = 'SET_MONSTERS'
+export const SET_CURR_MONSTER = 'SET_CURR_MONSTER'
 export const SET_SOP_COUNT = 'SET_SOP_COUNT'
 export const SET_SMASH_LIST = 'SET_SMASH_LIST'
 export const SET_PASS_LIST = 'SET_PASS_LIST'
@@ -9,6 +10,7 @@ export const UPDATE_SOP_COUNT = 'UPDATE_SOP_COUNT'
 
 const initialState = {
     monsters: [],
+    currMonster: null,
     smashList: [],
     passList: [],
     sopCount: {
@@ -24,6 +26,9 @@ export function monsterReducer(state = initialState, action) {
     switch (action.type) {
         case SET_MONSTERS:
             newState = { ...state, monsters: action.monsters }
+            break
+        case SET_CURR_MONSTER:
+            newState = { ...state, currMonster: action.currMonster }
             break
         case SET_SMASH_LIST:
             newState = { ...state, smashList: action.smashList }

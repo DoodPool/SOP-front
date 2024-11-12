@@ -8,4 +8,8 @@ export default defineConfig({
     react(),
     glsl(),
   ],
+  build: {
+    outDir: '../SOP-back/public',
+    emptyOutDir: true,
+  },
 })

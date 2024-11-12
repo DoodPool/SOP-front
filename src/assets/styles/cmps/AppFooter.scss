@@ -42,16 +42,25 @@
             font-size: 1.35rem;
         }
 
-        .logo {
-            position: absolute;
-            bottom: 10px;
-            left: 210px;
+        .logo-container {
+            position: relative;
 
-            width: 5rem;
-            opacity: .75;
+            .logo {
+                position: absolute;
+                bottom: -40px;
+                left: 140px;
 
-            // -webkit-filter: invert(100%);
-            // filter: invert(100%);
+                width: 8.5rem;
+                opacity: .3;
+            }
+            // .logo {
+            //     position: absolute;
+            //     bottom: -30px;
+            //     left: 200px;
+
+            //     width: 5rem;
+            //     opacity: .75;
+            // }
         }
     }
 

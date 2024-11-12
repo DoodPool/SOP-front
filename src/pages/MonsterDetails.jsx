@@ -1,30 +1,29 @@
 import { useEffect, useState } from 'react'
 import { utilService } from '../services/util.service'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { monsterService } from '../services/monster.service.local'
-import { loadCount, updateMonster } from '../store/monster.actions'
+import { loadCount, updateMonster, setCurrMonster } from '../store/monster.actions'
 import { SopCounter } from '../cmps/SopCounter'
+import { useSelector } from 'react-redux'
 
 export function MonsterDetails() {
-
     const navigate = useNavigate()
     const params = useParams()
+    const location = useLocation()
 
-    const [currMonster, setCurrMonster] = useState(null)
-    let [currId, setCurrId] = useState(params.monsterId)
+    const currMonster = useSelector(storeState => storeState.monsterModule.currMonster)
+    const [currId, setCurrId] = useState(params.monsterId)
 
     useEffect(() => {
+        setCurrId(params.monsterId)
         loadMonster()
         loadCount()
-    }, [currId])
+
+    }, [params.monsterId, currId])
 
     async function loadMonster() {
         try {
-            const monster = await monsterService.getById(currId)
-            // if (!monster) return navigate('/monster')
-            // console.log('mon', monster);
-
-            setCurrMonster(monster)
+            setCurrMonster(currId)
         } catch (err) {
             console.log('Had issues loading monster', err)
             navigate('/monsters')
@@ -36,24 +35,27 @@ export function MonsterDetails() {
         if (updatedMon.isHidden) {
             updatedMon.isHidden = !updatedMon.isHidden
         }
-
-        // console.log('updatedMon', updatedMon);
         await updateMonster(updatedMon)
 
-        let nextId = ++currId
+        let nextId = +params.monsterId
+        nextId++
         setCurrId(nextId.toString())
         navigate(`/monster/${nextId}`)
     }
 
-    // async function setNextMonsterId() {
-    //     const nextMonId = +params.monsterId + 1
-    //     setCurrId(nextMonId)
+
+    // function onPrev() {
+    //     let nextId = --currId
+    //     setCurrId(nextId.toString())
+    //     navigate(`/monster/${nextId}`)
     // }
 
-    // function test() {
-    //     navigate('/monster/101')
+    // function onNext() {
+    //     let nextId = ++currId
+    //     setCurrId(nextId.toString())
+    //     navigate(`/monster/${nextId}`)
     // }
-
+    
     if (!currMonster) return <div>loading...</div>
     return (
         <section className='details-container'>
@@ -69,8 +71,10 @@ export function MonsterDetails() {
                 <img className='curr-monster' src={currMonster.iconImg} alt="" />
 
                 <div className='sop-btns'>
+                    {/* <button onClick={() => onPrev()}>Prev</button> */}
                     <button className={`btn smash-btn ${currMonster.sopChoice === "smash" ? " smash-choice" : ""}`} onClick={() => setSopChoice('smash')}>Smash</button>
                     <button className={`btn pass-btn ${currMonster.sopChoice === "pass" ? " pass-choice" : ""}`} onClick={() => setSopChoice('pass')}>Pass</button>
+                    {/* <button onClick={() => onNext()}>Next</button> */}
                 </div>
             </div>
         </section >

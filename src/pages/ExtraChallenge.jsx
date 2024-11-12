@@ -21,7 +21,7 @@ export function ExtraChallenge() {
                 <p>-CodingCorvus</p>
                 <button onClick={() => navigate('/results')}>Results <span><FontAwesomeIcon icon="fa-solid fa-arrow-right" /></span></button>
             </article>
-            <img src="../src/assets/img/challenge-img.png" alt="rai-pfp" />
+            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269016/MH-sop/bhvafywuwlflixamfo93.png" alt="challenge-img" />
         </section >
     )
 }
