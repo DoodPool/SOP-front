@@ -51,7 +51,7 @@ export function HomePage() {
             </div>
 
             <div className='video-container'>
-                <video src="../src/assets/img/loopingdance.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
+                <video src="https://res.cloudinary.com/dlnkzbe0y/video/upload/v1731589185/MH-sop/cvsag3zzvl6w7x6ydrku.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
             </div>
         </section >
     )
