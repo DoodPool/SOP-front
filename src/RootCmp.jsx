@@ -1,5 +1,5 @@
-import React from 'react'
-import { Routes, Route } from 'react-router'
+import React, { useEffect, useState } from 'react'
+import { Routes, Route, useLocation } from 'react-router'
 
 import routes from './routes'
 
@@ -12,7 +12,20 @@ import Background from './cmps/Background'
 import backgroundFragment from './assets/shaders/nonsenseBc.frag'
 
 export function RootCmp() {
+    const location = useLocation()
     const isMenuOpen = useSelector((storeState) => storeState.systemModule.isMenuOpen)
+    let [inHome, setInHome] = useState(null)
+
+    useEffect(() => {
+        setIsInHome()
+
+    }, [location.pathname])
+
+    function setIsInHome() {
+        let isHome = false
+        if (location.pathname === '/') isHome = true
+        setInHome(isHome)
+    }
 
     function onToggleMenu(toggle) {
         // console.log('toggle', toggle)
@@ -23,8 +36,8 @@ export function RootCmp() {
         <section>
             {isMenuOpen && <AppMenu onToggleMenu={onToggleMenu} />}
             <div className='app-container'>
-                <Background backgroundFragment={backgroundFragment} />
-                <AppHeader onToggleMenu={onToggleMenu} />
+            {!inHome && <Background backgroundFragment={backgroundFragment} />}
+                {!inHome && <AppHeader onToggleMenu={onToggleMenu} />}
                 {/* <div className='side-bar'>side var</div> */}
                 {/* <div className='main'>main</div> */}
                 <main className='main'>
@@ -32,7 +45,7 @@ export function RootCmp() {
                         {routes.map(route => <Route key={route.path} exact={true} element={route.component} path={route.path} />)}
                     </Routes>
                 </main>
-                <AppFooter className='footer' />
+                {!inHome && <AppFooter className='footer' />}
             </div>
         </section>
     )

@@ -1,7 +1,142 @@
 .home-page {
+    display: flex;
+    // height: 100%;
 
-    p {
-        padding-block: 1rem;
-        color: $clr4;
+    .nav-slide {
+        position: absolute;
+        right: 0;
+        background-color: black;
+        opacity: .2;
+        // opacity: 1;
+
+        height: 100vh;
+        width: 100vw;
+        // z-index: 01;
+    }
+
+    .game-logo {
+        height: auto;
+        width: 13rem;
+        align-self: center;
+        margin-inline-end: .5rem;
+        justify-self: end;
+    }
+
+    .home-footer {
+        position: absolute;
+        margin-block-start: auto;
+        height: 22.5vh;
+        align-items: center;
+        bottom: 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        width: 100%;
+
+        article {
+            // top: 17.5%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+
+            display: flex;
+            flex-direction: column;
+            // width: 18rem;
+            width: 27rem;
+
+            cursor: default;
+            user-select: none;
+
+            p {
+                text-align: center;
+                font-family: superital, monospace;
+                letter-spacing: .10rem;
+            }
+
+            p:nth-of-type(1) {
+                // font-size: 2.25rem;
+                font-size: 3.375rem;
+            }
+
+            p:nth-of-type(2) {
+                // font-size: 1.35rem;
+                font-size: 2.025rem;
+            }
+
+            .logo-container {
+                position: relative;
+
+                .logo {
+                    position: absolute;
+                    // bottom: -40px;
+                    // left: 140px;
+                    bottom: -60px;
+                    left: 210px;
+
+                    // width: 8.5rem;
+                    width: 12.75rem;
+                    opacity: .35;
+                }
+            }
+        }
+
+        button {
+            font-size: 3.5rem;
+            letter-spacing: .10rem;
+
+            border: none;
+            background-color: inherit;
+            color: $clr4;
+            font-family: superital, monospace;
+
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                font-size: 3.75rem;
+            }
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+            margin-inline-start: auto;
+            margin-block-start: auto;
+            margin-inline-end: 1.75rem;
+            margin-block-end: 1.25rem;
+
+            &>* {
+                font-size: 1.65rem;
+                line-height: 2.25rem;
+                color: white;
+                transition: 0.2s;
+
+                &:hover {
+                    color: darken($color: white, $amount: 35);
+                }
+            }
+        }
+    }
+
+    .video-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        z-index: -1;
+
+        video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            min-height: 100%;
+            min-width: 100%;
+            // z-index: -1;
+        }
     }
 }
