@@ -1,13 +1,19 @@
-.footer-container {}
+.footer {
+    margin-block-start: 1rem;
+}
 
 .app-footer {
+    // position: absolute;
+    // bottom: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     // grid-template-columns: repeat(2, 1fr);
     // background-color: #212121;
     background-color: black;
-    padding-block-end: 1rem;
+    padding-block: .5rem;
     padding-inline: 1.5rem;
+
+    // height: 12.5vh;
 
     .credit {
         align-self: end;
@@ -53,6 +59,7 @@
                 width: 8.5rem;
                 opacity: .3;
             }
+
             // .logo {
             //     position: absolute;
             //     bottom: -30px;
@@ -69,7 +76,7 @@
         justify-self: end;
 
         img {
-            width: 7rem;
+            width: 7.5rem;
             margin-block: auto;
             margin-inline-end: 1.5rem;
 
@@ -99,4 +106,15 @@
 .footer-decor {
     transform: scale(-1);
     display: block;
+
+    // position: absolute;
+    // height: 9px;
+    // width: 100%;
+    // left: 0;
+    // right: 0;
+    // display: block;
+    // z-index: 1;
+
+    // margin: 0;
+    // padding: 0;
 }

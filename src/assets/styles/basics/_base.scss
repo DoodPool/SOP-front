@@ -13,6 +13,17 @@ img {
     width: 100px;
 }
 
+::-webkit-scrollbar {
+    background-color: #00000030;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    background-clip: content-box;
+    border: 3px solid transparent;
+}
+
 .app-container {
     display: grid;
     grid-template:

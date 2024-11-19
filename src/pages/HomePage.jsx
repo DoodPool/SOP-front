@@ -42,6 +42,11 @@ export function HomePage() {
                 </article>
 
                 <button onClick={startGame}>start</button>
+                <a className='start-btn' href="">
+                    <span className='btn-txt'>start</span>
+                    <span className='btn-top-lines'></span>
+                    <span className='btn-bottom-lines'></span>
+                </a>
 
                 {/* <div className="links clean-list flex justify-center">
                     <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>

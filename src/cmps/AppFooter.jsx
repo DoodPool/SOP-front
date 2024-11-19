@@ -7,6 +7,7 @@ export function AppFooter() {
             <svg className="footer-decor" viewBox="0 25 1727 58" fill="none" preserveAspectRatio="none">
                 <path fill="#000" d="M0 0h1727v42L864 58l10.5-16L0 58V0Z"></path>
             </svg>
+            {/* <img className="footer-decor" src="https://www.monsterhunter.com/wilds/_next/static/media/c_line.68bd3880.png" alt="footer-decor" /> */}
             <footer className="app-footer">
                 <article>
                     <p>Monster Hunter</p>
