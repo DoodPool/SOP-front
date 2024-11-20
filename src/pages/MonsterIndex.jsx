@@ -40,7 +40,7 @@ export function MonsterIndex() {
                             {monster.isHidden && <img src="https://tiermaker.com/images/chart/chart/final-bosses-tier-list-monster-hunter-171616/1stgen-questionmarkiconpng.png" alt="" />}
                             {monster.isHidden && <h3>???</h3>}
 
-                            {!monster.isHidden && <img src={monster.iconImg} alt="" />}
+                            {!monster.isHidden && <img className={`${"mon-" + monster.id}`} src={monster.iconImg} alt="" />}
                             {!monster.isHidden && <h3>{monster.name}</h3>}
                             {/* <img src={monster.iconImg} alt="" />
                             <h3>{monster.name}</h3> */}

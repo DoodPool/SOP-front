@@ -34,7 +34,6 @@ export async function loadMonsters() {
 
 export async function setCurrMonster(id) {
     try {
-
         const currMonster = await monsterService.getById(id)
         store.dispatch({
             type: SET_CURR_MONSTER,

@@ -14,7 +14,7 @@
         cursor: pointer;
 
         // width: 350px;
-        min-height: 450px;
+        min-height: 425px;
         transition: .2s;
 
         img {
@@ -30,6 +30,11 @@
 
         &:hover {
             filter: drop-shadow(0 0 2rem white);
+        }
+
+        .mon-225,
+        .mon-228 {
+            width: 80%;
         }
     }
 }

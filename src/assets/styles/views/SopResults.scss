@@ -16,7 +16,7 @@
             padding-block-end: .25rem;
         }
     }
-    
+
     .choice-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -27,24 +27,54 @@
         .monster-preview {
             display: flex;
             flex-direction: column;
-            margin-block-start: 1.5rem;
-
-            width: 100%;
-            // height: 300x;
+            padding: 10px;
+            // background-color: $clr2;
+            color: $clr4;
+            cursor: pointer;
+            // width: 350px;
+            min-height: 425px;
+            transition: .2s;
+            
+            img {
+                width: 100%;
+                // height: auto;
+                margin-block: auto;
+            }
+            
+            h3 {
+                text-align: center;
+                // filter: drop-shadow(0 0 .75 #F56C6C);
+                // filter: drop-shadow(0 0 .75rem #67C23A);
+                // margin-block-start: auto;
+            }
         }
 
-        img {
-            min-width: 100%;
-            height: auto;
-            margin-block-end: 1.5rem;
-            // filter: drop-shadow(0 0 1rem #67c23a48);
-            // max-width: 1fr;
+        .mon-225 img,
+        .mon-228 img {
+            width: 80%;
         }
 
-        h3 {
-            text-align: center;
-            margin-block-start: auto;
-            // filter: drop-shadow(0 0 1rem #67C23A);
-        }
+        // .monster-preview {
+        //     display: flex;
+        //     flex-direction: column;
+        //     margin-block-start: 1.5rem;
+
+        //     width: 100%;
+        //     // height: 300x;
+        // }
+
+        // img {
+        //     min-width: 100%;
+        //     height: auto;
+        //     margin-block-end: 1.5rem;
+        //     // filter: drop-shadow(0 0 1rem #67c23a48);
+        //     // max-width: 1fr;
+        // }
+
+        // h3 {
+        //     text-align: center;
+        //     margin-block-start: auto;
+        //     // filter: drop-shadow(0 0 1rem #67C23A);
+        // }
     }
 }

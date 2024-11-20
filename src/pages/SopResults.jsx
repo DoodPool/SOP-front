@@ -27,7 +27,7 @@ export function SopResults() {
                 </div>
                 <ul className="choice-list clean-list">
                     {smashList.map(monster =>
-                        <li className="monster-preview pointer" key={monster.id} onClick={() => onMonster(monster.id)}>
+                        <li className={`monster-preview pointer ${"mon-" + monster.id}`} key={monster.id} onClick={() => onMonster(monster.id)}>
                             <img src={monster.iconImg} alt="" />
                             <h3>{monster.name}</h3>
                         </li>)}
@@ -35,12 +35,12 @@ export function SopResults() {
             </article>
             <article>
                 <div className="result-header">
-                    <h2>Pass Pist</h2>
+                    <h2>Pass List</h2>
                     <p>Total: {passList.length}</p>
                 </div>
                 <ul className="choice-list clean-list">
                     {passList.map(monster =>
-                        <li className="monster-preview pointer" key={monster.id} onClick={() => onMonster(monster.id)}>
+                        <li className={`monster-preview pointer ${"mon-" + monster.id}`} key={monster.id} onClick={() => onMonster(monster.id)}>
                             <img src={monster.iconImg} alt="" />
                             <h3>{monster.name}</h3>
                         </li>)}

@@ -23,24 +23,28 @@ export function MonsterDetails() {
 
     async function loadMonster() {
         try {
-            setCurrMonster(currId)
+            await setCurrMonster(currId)
         } catch (err) {
             console.log('Had issues loading monster', err)
-            navigate('/monsters')
+            navigate('/challenge')
         }
     }
 
     async function setSopChoice(choice) {
-        let updatedMon = { ...currMonster, 'sopChoice': choice }
-        if (updatedMon.isHidden) {
-            updatedMon.isHidden = !updatedMon.isHidden
-        }
-        await updateMonster(updatedMon)
+        try {
+            let updatedMon = { ...currMonster, 'sopChoice': choice }
+            if (updatedMon.isHidden) {
+                updatedMon.isHidden = !updatedMon.isHidden
+            }
+            await updateMonster(updatedMon)
 
-        let nextId = +params.monsterId
-        nextId++
-        setCurrId(nextId.toString())
-        navigate(`/monster/${nextId}`)
+            let nextId = +params.monsterId
+            nextId++
+            setCurrId(nextId.toString())
+            navigate(`/monster/${nextId}`)
+        } catch (err) {
+            console.log('Had issues setting sop choices', err)
+        }
     }
 
 
@@ -55,7 +59,7 @@ export function MonsterDetails() {
     //     setCurrId(nextId.toString())
     //     navigate(`/monster/${nextId}`)
     // }
-    
+
     if (!currMonster) return <div>loading...</div>
     return (
         <section className='details-container'>
