@@ -14,9 +14,19 @@ export function HomePage() {
 
     return (
         <section className='home-page'>
-            <div className='nav-slide'></div>
 
-            {/* <Marquee>
+
+            <article className='sop-logo'>
+                <p>Monster Hunter</p>
+                <p>Smash or Pass</p>
+                <div className="logo-container">
+                    <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" />
+                </div>
+            </article>
+
+            <div className='home-footer'>
+                <div></div>
+                {/* <Marquee className='marquee-container' speed={5}>
                 <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
                 <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
                 <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
@@ -32,29 +42,20 @@ export function HomePage() {
                 <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
             </Marquee> */}
 
-            <div className='home-footer'>
-                <article>
-                    <p>Monster Hunter</p>
-                    <p>Smash or Pass</p>
-                    <div className="logo-container">
-                        <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" />
-                    </div>
-                </article>
-
                 <button onClick={startGame}>start</button>
-                <a className='start-btn' href="">
-                    <span className='btn-txt'>start</span>
-                    <span className='btn-top-lines'></span>
-                    <span className='btn-bottom-lines'></span>
-                </a>
 
-                {/* <div className="links clean-list flex justify-center">
-                    <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
-                    <a href="https://discord.gg/cmftvxSzMK"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
-                    <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
-                </div> */}
+                <div className="social-links-container">
+                    <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269010/MH-sop/e5hkelfwun1gtyy9iydl.jpg" alt="rai-pfp" />
+
+                    <div className="links clean-list flex justify-center">
+                        <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
+                        <a href="https://discord.gg/cmftvxSzMK"><FontAwesomeIcon icon="fa-brands fa-discord" /></a>
+                        <a href="https://www.twitch.tv/wreckitrai"><FontAwesomeIcon icon="fa-brands fa-twitch" /></a>
+                    </div>
+                </div>
             </div>
 
+            <div className='vid-filter'></div>
             <div className='video-container'>
                 <video src="https://res.cloudinary.com/dlnkzbe0y/video/upload/v1731589185/MH-sop/cvsag3zzvl6w7x6ydrku.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
             </div>

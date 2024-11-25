@@ -1,92 +1,83 @@
 .home-page {
     display: flex;
-    // height: 100%;
 
-    .nav-slide {
+    .sop-logo {
         position: absolute;
-        right: 0;
-        // background-color: lightgrey;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
 
-        // background-color: black;
-        background-image: radial-gradient(circle, lightgrey, gray, black, black, black);
+        // display: flex;
+        // flex-direction: column;
+        // width: 18rem;
+        // width: 27rem;
 
-        // background-color: black;
-        opacity: .35;
-        // opacity: 0;
+        cursor: default;
+        user-select: none;
+        z-index: 1;
+        scale: 1.5;
 
-        height: 100vh;
-        width: 100vw;
-        // z-index: 01;
-    }
+        p {
+            text-align: center;
+            font-family: superital, monospace;
+            letter-spacing: .10rem;
+            filter: drop-shadow(0 0 .1rem black);
+        }
 
-    .game-logo {
-        height: auto;
-        width: 13rem;
-        align-self: center;
-        margin-inline-end: .5rem;
-        justify-self: end;
+        p:nth-of-type(1) {
+            // font-size: 2.25rem;
+            font-size: 3.375rem;
+        }
+
+        p:nth-of-type(2) {
+            // font-size: 1.35rem;
+            font-size: 2.025rem;
+        }
+
+        .logo-container {
+            position: relative;
+
+            .logo {
+                position: absolute;
+                // bottom: -40px;
+                // left: 140px;
+                bottom: -60px;
+                left: 210px;
+
+                // width: 8.5rem;
+                width: 12.75rem;
+                opacity: .45;
+            }
+        }
     }
 
     .home-footer {
         position: absolute;
-        margin-block-start: auto;
-        height: 22.5vh;
-        align-items: center;
         bottom: 0;
+
+        height: 27.5vh;
+        margin-block-start: auto;
+        align-items: center;
+        background-color: $clr3;
 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
 
         width: 100%;
 
-        article {
-            // top: 17.5%;
-            // left: 50%;
-            // transform: translate(-50%, -50%);
-
-            display: flex;
-            flex-direction: column;
-            // width: 18rem;
-            width: 27rem;
-
-            cursor: default;
-            user-select: none;
-
-            p {
-                text-align: center;
-                font-family: superital, monospace;
-                letter-spacing: .10rem;
-            }
-
-            p:nth-of-type(1) {
-                // font-size: 2.25rem;
-                font-size: 3.375rem;
-            }
-
-            p:nth-of-type(2) {
-                // font-size: 1.35rem;
-                font-size: 2.025rem;
-            }
-
-            .logo-container {
-                position: relative;
-
-                .logo {
-                    position: absolute;
-                    // bottom: -40px;
-                    // left: 140px;
-                    bottom: -60px;
-                    left: 210px;
-
-                    // width: 8.5rem;
-                    width: 12.75rem;
-                    opacity: .35;
-                }
+        .marquee-container {
+            transform: rotate(90deg);
+            height: 20vh;
+            width: 13vw;
+            
+            img {
+                transform: rotate(-90deg);
+                width: 9vw;
             }
         }
 
         button {
-            font-size: 3.5rem;
+            font-size: 5rem;
             letter-spacing: .10rem;
 
             border: none;
@@ -98,22 +89,32 @@
             transition: 0.2s;
 
             &:hover {
-                font-size: 3.75rem;
+                font-size: 4.75rem;
+            }
+        }
+
+        .social-links-container {
+            display: flex;
+            flex-direction: column;
+            justify-self: end;
+            margin-inline-end: 4rem;
+
+            img {
+                width: 85%;
+                margin-block-end: 1.5rem;
+
+                border-radius: 50%;
+                align-self: center;
             }
         }
 
         .links {
             display: flex;
-            flex-direction: column;
-            gap: .5rem;
-            margin-inline-start: auto;
-            margin-block-start: auto;
-            margin-inline-end: 1.75rem;
-            margin-block-end: 1.25rem;
+            gap: 1.25rem;
 
             &>* {
-                font-size: 1.65rem;
-                line-height: 2.25rem;
+                font-size: 1.5rem;
+            //   line-height: 1.75rem;
                 color: white;
                 transition: 0.2s;
 
@@ -124,13 +125,23 @@
         }
     }
 
+    .vid-filter {
+        background-image: radial-gradient(circle, transparent, rgba(128, 128, 128, .6), black, black, black);
+        opacity: .35;
+
+        height: 72.5vh;
+        width: 100vw;
+        z-index: 1;
+    }
+
     .video-container {
         position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        bottom: 0;
+        top: -7.5vh;
 
+        width: 100%;
+        height: 80vh;
+        overflow: hidden;
+        display: block;
         z-index: -1;
 
         video {
@@ -139,94 +150,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            min-height: 100%;
             min-width: 100%;
-            // z-index: -1;
-        }
-    }
-
-    .start-btn {
-        padding: 2.5rem 6rem;
-        font-size: 2.4rem;
-        position: relative;
-        text-align: center;
-        display: block;
-        // font-family: Markazi Text, "source-han-serif-japanese", serif;
-        background-color: black;
-        color: #fcf5de;
-        line-height: 1;
-        transition: all .25s ease-out;
-        width: 100%;
-        cursor: pointer;
-
-        .btn-top-lines {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url(https://www.monsterhunter.com/wilds/_next/static/media/frame_03_l.e747427b.png) no-repeat;
-            background-position: 0 0;
-            background-size: 2.5rem auto;
-            top: 0;
-            left: 0;
-            z-index: 1;
-
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 1rem;
-                right: 0;
-                height: .2rem;
-                background: #c7c0ab;
-                background: linear-gradient(90deg, #c7c0ab 50%, hsla(45, 20%, 73%, 0));
-            }
-
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 1.5rem;
-                bottom: 0;
-                width: .2rem;
-                background: #c7c0ab;
-                background: linear-gradient(180deg, #c7c0ab 50%, rgba(200, 193, 172, 0));
-            }
-        }
-
-        .btn-bottom-lines {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url(https://www.monsterhunter.com/wilds/_next/static/media/frame_03_r.2ecf230a.png) no-repeat;
-            background-position: 100% 100%;
-            background-size: 2.5rem auto;
-            top: 0;
-            left: 0;
-            z-index: 1;
-
-            &::before {
-                content: "";
-                display: block;
-                position: absolute;
-                left: 0;
-                right: 1rem;
-                height: .2rem;
-                bottom: 0;
-                background: #c7c0ab;
-                background: linear-gradient(270deg, #c7c0ab 50%, hsla(45, 20%, 73%, 0));
-            }
-
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 1.2rem;
-                width: .2rem;
-                background: #c7c0ab;
-                background: linear-gradient(0deg, #c7c0ab 50%, hsla(45, 20%, 73%, 0));
-            }
         }
     }
 }

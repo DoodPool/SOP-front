@@ -2,7 +2,7 @@ import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import routes from '../routes'
 import { useEffect, useState } from 'react'
 
-export function AppHeader({ onToggleMenu }) {
+export function AppHeader({ onToggleMenu, inHome }) {
     const navigate = useNavigate()
     const location = useLocation()
     const [dynamicClass, setDynamicClass] = useState(false)
@@ -13,7 +13,7 @@ export function AppHeader({ onToggleMenu }) {
 
     function setHeaderClass() {
         let path = location.pathname
-        if (path.includes('monster') || path.includes('results')) {
+        if (path.includes('monster') || path.includes('results') || path === '/') {
             setDynamicClass('fixed')
         } else {
             setDynamicClass('sticky')
@@ -22,7 +22,8 @@ export function AppHeader({ onToggleMenu }) {
 
     return (
         <header className={`app-header flex space-between align-center header ${dynamicClass}`}>
-            <button className='header-btn pointer' onClick={() => navigate('/')}>Home</button>
+            {!inHome && <button className='header-btn pointer' onClick={() => navigate('/')}>Home</button>}
+            {inHome && <button className='header-btn unavailable'>Reset</button>}
 
             {/* <nav>
                 <p className='pointer'>Game selector |</p>

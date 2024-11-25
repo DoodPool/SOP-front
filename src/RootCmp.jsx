@@ -36,8 +36,8 @@ export function RootCmp() {
         <section>
             {isMenuOpen && <AppMenu onToggleMenu={onToggleMenu} />}
             <div className='app-container'>
-            {!inHome && <Background backgroundFragment={backgroundFragment} />}
-                {!inHome && <AppHeader onToggleMenu={onToggleMenu} />}
+                {!inHome && <Background backgroundFragment={backgroundFragment} />}
+                {!inHome && <AppHeader onToggleMenu={onToggleMenu} inHome={inHome} />}
                 {/* <div className='side-bar'>side var</div> */}
                 {/* <div className='main'>main</div> */}
                 <main className='main'>
