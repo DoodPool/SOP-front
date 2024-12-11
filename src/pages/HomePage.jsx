@@ -3,6 +3,7 @@ import { utilService } from '../services/util.service'
 import { useNavigate, useParams } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { LogoCarousel } from '../cmps/LogoCarousel';
 
 export function HomePage() {
 
@@ -25,24 +26,29 @@ export function HomePage() {
             </article>
 
             <div className='home-footer'>
-                <div></div>
+                {/* <div></div> */}
+                <LogoCarousel />
                 {/* <Marquee className='marquee-container' speed={5}>
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-            </Marquee> */}
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
+                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
+                </Marquee> */}
 
-                <button onClick={startGame}>start</button>
+                <div onClick={startGame} className='start-btn-container pointer'>
+                    <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                    <button className='pointer'>start</button>
+                    <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                </div>
 
                 <div className="social-links-container">
                     <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269010/MH-sop/e5hkelfwun1gtyy9iydl.jpg" alt="rai-pfp" />

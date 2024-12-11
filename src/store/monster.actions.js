@@ -39,7 +39,7 @@ export async function setCurrMonster(id) {
             type: SET_CURR_MONSTER,
             currMonster
         })
-    } catch(err) {
+    } catch (err) {
         console.log('Cannot load curr monster', err)
         throw err
     }
@@ -89,6 +89,11 @@ export async function loadCount() {
     } catch (err) {
         console.log('cannot load counter', err)
     }
+}
+
+export function onResetMonsters(ev) {
+    ev.stopPropagation()
+    monsterService.resetMonsters()
 }
 
 // export async function addMonster(monster) {

@@ -65,32 +65,56 @@
 
         width: 100%;
 
-        .marquee-container {
-            transform: rotate(90deg);
-            height: 20vh;
-            width: 13vw;
-            
-            img {
-                transform: rotate(-90deg);
-                width: 9vw;
-            }
-        }
+        // .marquee-container {
+        //     transform: rotate(90deg);
+        //     height: 20vh;
+        //     width: 13vw;
 
-        button {
-            font-size: 5rem;
-            letter-spacing: .10rem;
+        //     img {
+        //         transform: rotate(-90deg);
+        //         width: 9vw;
+        //     }
+        // }
 
-            border: none;
-            background-color: inherit;
-            color: $clr4;
-            font-family: superital, monospace;
-
-            cursor: pointer;
+        .start-btn-container {
+            display: flex;
+            justify-self: center;
             transition: 0.2s;
 
-            &:hover {
-                font-size: 4.75rem;
+            img {
+                width: 4rem;
+                height: auto;
+
+                &:nth-of-type(1) {
+                    transform: rotate(90deg);
+                }
+
+                &:nth-of-type(2) {
+                    transform: rotate(-90deg);
+                    margin-inline-start: .75rem;
+                }
             }
+
+            button {
+                font-size: 4.75rem;
+                letter-spacing: .10rem;
+                padding-inline: 1rem;
+
+                border: none;
+                background-color: inherit;
+                color: $clr4;
+                font-family: superital, monospace;
+                transition: 0.2s;
+            }
+
+            &:hover button {
+                padding-inline: 1.5rem;
+                transition: 0.2s;
+            }
+
+            // &:hover {
+            //     scale: 1.05;
+            // }
         }
 
         .social-links-container {
@@ -114,7 +138,7 @@
 
             &>* {
                 font-size: 1.5rem;
-            //   line-height: 1.75rem;
+                //   line-height: 1.75rem;
                 color: white;
                 transition: 0.2s;
 

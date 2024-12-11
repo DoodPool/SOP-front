@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import routes from '../routes'
 import { useEffect, useState } from 'react'
+import { onResetMonsters } from '../store/monster.actions'
 
 export function AppHeader({ onToggleMenu, inHome }) {
     const navigate = useNavigate()
@@ -23,13 +24,7 @@ export function AppHeader({ onToggleMenu, inHome }) {
     return (
         <header className={`app-header flex space-between align-center header ${dynamicClass}`}>
             {!inHome && <button className='header-btn pointer' onClick={() => navigate('/')}>Home</button>}
-            {inHome && <button className='header-btn unavailable'>Reset</button>}
-
-            {/* <nav>
-                <p className='pointer'>Game selector |</p>
-                <p className='pointer' onClick={() => navigate('/monster')}>Monster list |</p>
-                <p className='pointer'>Results</p>
-            </nav> */}
+            {inHome && <button className='header-btn pointer' onClick={(ev) => onResetMonsters(ev)}>Reset</button>}
 
             <button className='header-btn pointer' onClick={() => onToggleMenu(true)}>Menu</button>
         </header>

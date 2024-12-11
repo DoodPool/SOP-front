@@ -71,7 +71,7 @@
     padding-block: 1rem;
 
     cursor: pointer;
-    transition: .15s;
+    transition: .25s;
 
     font-family: sans-serif;
 
@@ -79,12 +79,18 @@
         background-color: $clr;
         border-color: $clr;
         color: black;
+        
+        // box-shadow: inset 0 0 0 2em $clr;
     }
+
+    // &:focus {
+    //     box-shadow: inset 0 0 0 2em $clr;
+    // }
 }
 
 @mixin btn-choice($clr) {
-        background-color: $clr;
-        border-color: $clr;
-        color: black;
-        cursor: default;
+    background-color: $clr;
+    border-color: $clr;
+    color: black;
+    cursor: default;
 }

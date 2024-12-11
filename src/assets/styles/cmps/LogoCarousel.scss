@@ -1,0 +1,23 @@
+.swiper-container {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    user-select: none;
+    margin: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+
+    margin-inline-start: 1.5rem;
+    padding-block: 2rem;
+}
