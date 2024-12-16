@@ -1,9 +1,9 @@
 // import React from 'react'
 import { utilService } from '../services/util.service'
 import { useNavigate, useParams } from 'react-router-dom'
-import Marquee from "react-fast-marquee";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LogoCarousel } from '../cmps/LogoCarousel';
+import { onResetMonsters } from '../store/monster.actions';
 
 export function HomePage() {
 
@@ -15,8 +15,6 @@ export function HomePage() {
 
     return (
         <section className='home-page'>
-
-
             <article className='sop-logo'>
                 <p>Monster Hunter</p>
                 <p>Smash or Pass</p>
@@ -26,28 +24,15 @@ export function HomePage() {
             </article>
 
             <div className='home-footer'>
-                {/* <div></div> */}
                 <LogoCarousel />
-                {/* <Marquee className='marquee-container' speed={5}>
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                    <img className='game-logo' src="../src/assets/img/MHWIB.png" alt="mhwib" />
-                    <img className='game-logo' src="../src/assets/img/MHW.webp" alt="mhW" />
-                </Marquee> */}
 
-                <div onClick={startGame} className='start-btn-container pointer'>
-                    <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
-                    <button className='pointer'>start</button>
-                    <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                <div className='home-btns-container'>
+                    <div onClick={startGame} className='start-btn-container pointer'>
+                        <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                        <button className='pointer'>start</button>
+                        <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                    </div>
+                    <button className='reset-btn pointer' onClick={(ev) => onResetMonsters(ev)}>Reset</button>
                 </div>
 
                 <div className="social-links-container">

@@ -24,7 +24,7 @@ export function AppHeader({ onToggleMenu, inHome }) {
     return (
         <header className={`app-header flex space-between align-center header ${dynamicClass}`}>
             {!inHome && <button className='header-btn pointer' onClick={() => navigate('/')}>Home</button>}
-            {inHome && <button className='header-btn pointer' onClick={(ev) => onResetMonsters(ev)}>Reset</button>}
+            {inHome && <div></div>}
 
             <button className='header-btn pointer' onClick={() => onToggleMenu(true)}>Menu</button>
         </header>

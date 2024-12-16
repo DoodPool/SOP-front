@@ -212,3 +212,7 @@
   .grid-col-3 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .light-shadow {
+    filter: drop-shadow(0 0 3px white);
+  }

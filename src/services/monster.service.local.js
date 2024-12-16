@@ -1236,12 +1236,8 @@ function _createMonsters() {
 // TEST DATA
 // storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
 
-// HomePage:
-// change strat btn
-
 // try diffrent background 
 // do adjustments and clean up
 // add animations
 // change extra challenge css
 // test site 
-
