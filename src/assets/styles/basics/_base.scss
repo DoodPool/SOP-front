@@ -15,12 +15,12 @@ img {
 }
 
 ::-webkit-scrollbar {
-    background-color: #00000030;
+    background-color: $clr3;
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: $clr4;
     background-clip: content-box;
     border: 3px solid transparent;
 }

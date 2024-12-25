@@ -94,3 +94,13 @@
     color: black;
     cursor: default;
 }
+
+@mixin challenge-decore() {
+    content: "";
+    background: url('https://res.cloudinary.com/dlnkzbe0y/image/upload/v1735155432/MH-sop/otlsxgmo92asvad0fci6.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 26rem;
+    height: 15rem;
+    position: absolute;
+}

@@ -1236,8 +1236,6 @@ function _createMonsters() {
 // TEST DATA
 // storageService.post(STORAGE_KEY, {vendor: 'Subali Rahok 2', price: 980}).then(x => console.log(x))
 
-// try diffrent background 
-// do adjustments and clean up
-// add animations
-// change extra challenge css
+// add imaage loader?
+// change extra challenge css?
 // test site 
