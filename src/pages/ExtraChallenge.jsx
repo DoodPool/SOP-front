@@ -7,21 +7,45 @@ export function ExtraChallenge() {
     return (
         <section className="letter-container">
             <span className="decore-upper"></span>
-            {/* <h1>Extra challenge</h1> */}
+            <h1>Extra challenge</h1>
             <div className="challenge-container">
-                <div className="img-test">
+                <div className="challenge-imgs">
                     {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269016/MH-sop/bhvafywuwlflixamfo93.png" alt="challenge-img" /> */}
                     {/* <img src="../src/assets/img/sop-img.png" alt="challenge-img" /> */}
-                    <img src="../src/assets/img/sop-img2.png" alt="challenge-img" />
-                </div>
-                <article className="challenge">
-                    <div className="greeting">
-                        <p>Greetings hunter,</p>
-                        <p>We&apos;ve noticed your interest in certain monster… attributes.</p>
-                        <p>As members of the Reproductive Behaviour Study Group, we&apos;d like to invite you to participate in a special hunting expedition.</p>
-                        <p>To keep things simple, the expedition will focus on the monsters you&apos;ve… noticed.</p>
-                        <p>We follow certain clothing and hunting guidelines and they are as follow:</p>
+                    <img className="main-img" src="../src/assets/img/sop-img2.png" alt="challenge-img" />
+                    {/* <img src="https://static.wikia.nocookie.net/monsterhunter/images/7/72/MH3icon-Helm.png" alt="challenge-img" /> */}
+                    <h2>Layered Set</h2>
+                    <div className="layered-set">
+                        <article>
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/7/72/MH3icon-Helm.png" alt="" />
+                            <p>Hare Band</p>
+                        </article>
+                        <article>
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/2/23/MH3icon-Plate.png" alt="" />
+                            <p>Buff Body</p>
+                        </article>
+                        <article>
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/a/a1/MH3icon-Gauntlets.png/" alt="" />
+                            <p>Gala Suit</p>
+                        </article>
+                        <article>
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/7/76/MH3icon-Waist.png" alt="" />
+                            <p>Buff Body</p>
+                        </article>
+                        <article>
+                            <img src="https://static.wikia.nocookie.net/monsterhunter/images/5/5b/MH3icon-Leggings.png" alt="" />
+                            <p>Gala Suit</p>
+                        </article>
                     </div>
+                </div>
+                <article className="challenge-txt">
+                    {/* <div className="greeting"> */}
+                    <p>Greetings hunter,</p>
+                    <p>We&apos;ve noticed your interest in certain monster… attributes.</p>
+                    <p>As members of the Reproductive Behaviour Study Group, we&apos;d like to invite you to participate in a special hunting expedition.</p>
+                    <p>To keep things simple, the expedition will focus on the monsters you&apos;ve… noticed.</p>
+                    <p>We follow certain clothing and hunting guidelines and they are as follow:</p>
+                    {/* </div> */}
 
                     <ul>
                         <li>All monsters in your smash list are now your targets</li>
