@@ -1,11 +1,9 @@
 .letter-container {
     display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // margin-inline: 2.5rem;
     margin: auto;
     margin-block-start: 1rem;
+
     background: url('https://www.monsterhunter.com/wilds/_next/static/media/bg-content_2.f4ac7510.png');
-    // background-color: pink;
     height: 100%;
     width: 95%;
     border-radius: 10px;
@@ -13,8 +11,6 @@
 
     .decore-upper {
         position: relative;
-        // padding: 0;
-        // margin: 0;
 
         &::before {
             @include challenge-decore();
@@ -51,10 +47,12 @@
         font-size: 3rem;
         text-transform: capitalize;
         text-align: center;
-        margin-block: 2rem;
-        // height: 0;
-        // padding-block-end: 1.5rem;
 
+        margin-block: 2rem;
+        font-family: superital, sans-serif;
+        font-weight: 400;
+        letter-spacing: .15rem;
+        text-shadow: 0 0 16px rgba(0, 0, 0, .5);
         grid-column: 1 / -1;
     }
 
@@ -62,76 +60,33 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 3rem;
-        // background-color: rgba(255, 0, 0, 0.24);
         margin-inline: 4rem;
-        // margin-block: 4rem;
-
-        // display: flex;
-        // flex-direction: column;
-        // margin-inline-end: 2rem;
-        // padding: 0rem 1rem 1rem 1rem;
-
-        // .greeting {
-        // line-height: 2rem;
-        // padding-block-end: .75rem;
 
         p {
-            // font-family: "Markazi Text", source-han-serif-japanese, serif;
-            // font-family: superital,monospace;
+            font-family: Papyrus, 'Garamond', serif;
+            color: #3a3a3a;
+            // color: #ebebeb;
             font-size: 1.5rem;
-            // color: #e6e6e6;
             text-shadow: 0 0 16px rgba(0, 0, 0, .2);
-            // font-weight: 700;
+            font-weight: 700;
         }
 
         p:first-of-type {
-            // line-height: 3rem;
             font-size: 2rem;
             font-weight: 700;
-            color: white;
-            // padding-block-end: 1rem;
             text-shadow: 0 0 16px rgba(0, 0, 0, .4);
-            // padding-block-end: .5rem;
         }
-
-        p:last-of-type {
-            // padding-block-start: 1.5rem;
-            // font-size: 1.75rem;
-            // font-weight: 700;
-        }
-
-        // }
 
         ul {
             text-align: start;
             margin-block: 1.5rem;
-            // margin-inline-start: 2rem;
 
             li {
-                // font-family: "Markazi Text", source-han-serif-japanese, serif;
-                // font-family: superital,monospace;
+                font-family: Papyrus, 'Garamond', serif;
+                color: #3a3a3a;
+                // color: #ebebeb;
+                font-weight: 700;
                 font-size: 1.5rem;
-                // padding-block-end: 1.5rem;
-            }
-        }
-
-        button {
-            // display: flex;
-            margin-block-start: auto;
-            margin-inline-end: auto;
-
-            font-size: 1.5rem;
-            border: none;
-            // border-bottom: 1px $clr4 solid;
-            background-color: inherit;
-            color: $clr4;
-
-            cursor: pointer;
-
-            &:hover span {
-                transition: .2s;
-                padding-inline-start: .25rem;
-
             }
         }
     }
@@ -144,20 +99,24 @@
             max-width: 100%;
             width: 100%;
             min-height: 25rem;
-
             max-height: 100%;
-
             object-fit: cover;
-            // border-radius: 10px;
+            border-radius: 5px;
         }
 
         h2 {
             text-align: center;
             font-size: 2rem;
-            margin-block-start: 2.25rem;
-            margin-block-end: 1.5rem;
+            margin-block-start: 1.5rem;
+            margin-block-end: 1.35rem;
+
+            text-shadow: 0 0 16px rgba(0, 0, 0, .5);
+            font-family: superital, sans-serif;
+            letter-spacing: .15rem;
+            font-weight: 400;
+            text-transform: uppercase;
         }
-        
+
         .layered-set {
             display: flex;
             gap: 3rem;
@@ -167,6 +126,7 @@
 
             p {
                 font-size: 1.25rem;
+                font-weight: 700;
             }
 
             img {
@@ -174,4 +134,13 @@
             }
         }
     }
+
+    // .letter-logo {
+    //     position: absolute;
+    //     bottom: 0rem;
+    //     right: 7rem;
+    //     width: 30rem;
+    //     z-index: -1;
+    //     opacity: .7;
+    // }
 }

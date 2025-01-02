@@ -1071,7 +1071,7 @@ function _createMonsters() {
             {
                 id: '236',
                 name: "Khezu",
-                game: "MH-Freedom2",
+                game: "MHF2",
                 iconImg: "https://www.mandatory.gg/wp-content/uploads/mandatory-mhrise-guides-monstres-khezu.png",
                 sopChoice: null,
                 isHidden: true,
