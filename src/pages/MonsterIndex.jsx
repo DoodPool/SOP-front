@@ -1,31 +1,15 @@
 import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { loadMonsters, updateMonster } from '../store/monster.actions.js'
-
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-import { SopCounter } from '../cmps/SopCounter.jsx'
+import { loadMonsters } from '../store/monster.actions.js'
 import { useNavigate } from 'react-router'
-// import { monsterService } from '../services/monster.service.js'
 
 export function MonsterIndex() {
-
     const monsters = useSelector(storeState => storeState.monsterModule.monsters)
     const navigate = useNavigate()
 
     useEffect(() => {
         loadMonsters()
     }, [])
-
-    async function onUpdateMonster(monster) {
-        const price = +prompt('New price?')
-        const monsterToSave = { ...monster, price }
-        try {
-            const savedMonster = await updateMonster(monsterToSave)
-            showSuccessMsg(`Monster updated, new price: ${savedMonster.price}`)
-        } catch (err) {
-            showErrorMsg('Cannot update monster')
-        }
-    }
 
     function onMonster(id) {
         navigate(`/monster/${id}`)
@@ -42,8 +26,6 @@ export function MonsterIndex() {
 
                             {!monster.isHidden && <img className={`${"mon-" + monster.id}`} src={monster.iconImg} alt="" />}
                             {!monster.isHidden && <h3>{monster.name}</h3>}
-                            {/* <img src={monster.iconImg} alt="" />
-                            <h3>{monster.name}</h3> */}
                         </li>)}
                 </ul>
             </main>

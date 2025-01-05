@@ -1,7 +1,5 @@
-import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
-import routes from '../routes'
+import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
-import { onResetMonsters } from '../store/monster.actions'
 
 export function AppHeader({ onToggleMenu, inHome }) {
     const navigate = useNavigate()

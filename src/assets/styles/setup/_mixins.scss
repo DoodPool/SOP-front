@@ -50,15 +50,6 @@
     }
 }
 
-// Mixin for removing hover efects on iphone screen
-//   @mixin hover-supported {    
-//     @media not all and (pointer: coarse) {
-//         &:hover {
-//             @content;
-//         }
-//     }
-//   }
-
 @mixin sop-btn($clr, $percentage) {
     background-color: transparent;
     color: white;
@@ -79,13 +70,7 @@
         background-color: $clr;
         border-color: $clr;
         color: black;
-        
-        // box-shadow: inset 0 0 0 2em $clr;
     }
-
-    // &:focus {
-    //     box-shadow: inset 0 0 0 2em $clr;
-    // }
 }
 
 @mixin btn-choice($clr) {

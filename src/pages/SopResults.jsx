@@ -10,8 +10,6 @@ export function SopResults() {
 
     useEffect(() => {
         loadSopList()
-        console.log('smashList', smashList);
-        console.log('passList', passList);
     }, [])
 
     function onMonster(id) {

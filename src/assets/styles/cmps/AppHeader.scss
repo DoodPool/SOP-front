@@ -1,18 +1,11 @@
 .app-header {
     display: flex;
-    // position: fixed;
-    // position: sticky;
     justify-content: space-between;
-
     width: 100%;
-
     color: $clr4;
-    // background-color: inherit;
-    // mix-blend-mode: difference;
 
     padding-inline: 2rem;
     padding-block-start: 1.25rem;
-    // padding-block-end: .5rem;
     height: 9vh;
 
     font-size: rem(18px);

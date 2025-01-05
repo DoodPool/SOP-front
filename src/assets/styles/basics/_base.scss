@@ -5,11 +5,6 @@
     padding: 0;
 }
 
-html {
-    // background-color: #121212;
-    // background-color: $clr3;
-}
-
 img {
     width: 100px;
 }
@@ -57,13 +52,11 @@ img {
     position: fixed;
     display: block;
 
-    // background-color: white;
     background-color: #121212;
     height: 100%;
     width: 100%;
 
     z-index: -10;
-    // opacity: .05;
 }
 
 @keyframes slide-in {

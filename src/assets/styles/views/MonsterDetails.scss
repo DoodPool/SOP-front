@@ -1,43 +1,17 @@
 .details-container {
     display: grid;
-    // grid-template-columns: 325px 1fr 325px;
     grid-template-columns: 30vw 40vw 30vw;
-    // margin-inline: 2rem;
-
     height: 100%;
 
     .counter-container {
         align-self: end;
-        // justify-self: center;
         margin-inline-start: 2rem;
     }
 
     .main-info {
         display: grid;
         grid-template-rows: auto 1fr auto;
-
-        // display: flex;
-        // flex-direction: column;
         max-width: 100%;
-
-        // .monster-name {
-        //     display: grid;
-        //     grid-template-columns: repeat(3, 1fr);
-        //     align-self: center;
-        //     margin-block-start: 3rem;
-        //     margin-block-end: 1rem;
-        //     // justify-self: center;
-        // }
-
-
-        // .game-logo {
-        //     height: auto;   
-        //     width: 13rem;
-        //     align-self: center;
-        //     margin-inline-end: .5rem;
-        //     justify-self: end;
-
-        // }
 
         .curr-monster {
             max-height: 46vh;
@@ -53,7 +27,6 @@
             align-self: center;
             font-size: 2.85rem;
             margin: auto;
-            // grid-column: 2 / -1;
             margin-block-start: 4rem;
             margin-block-end: 4rem;
         }
@@ -61,10 +34,8 @@
 }
 
 .sop-btns {
-    // height: 15vh;
     margin-inline: auto;
     margin-block-start: 2rem;
-    // margin-block-start: auto;
 
     &>* {
         margin-inline: 0.5rem;

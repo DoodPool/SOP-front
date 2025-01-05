@@ -1,15 +1,7 @@
 import { monsterService } from "../services/monster.service.local.js";
 import { store } from './store.js'
-import { showSuccessMsg, showErrorMsg } from '../services/event-bus.service.js'
-import { ADD_MONSTER, SET_SOP_COUNT, SET_MONSTERS, UPDATE_MONSTER, SET_CURR_MONSTER, UPDATE_SOP_COUNT, SET_SMASH_LIST, SET_PASS_LIST } from "./monster.reducer.js";
+import { SET_SOP_COUNT, SET_MONSTERS, UPDATE_MONSTER, SET_CURR_MONSTER, SET_SMASH_LIST, SET_PASS_LIST } from "./monster.reducer.js";
 
-// Action Creators:
-// export function getActionAddMonster(monster) {
-//     return {
-//         type: ADD_MONSTER,
-//         monster
-//     }
-// }
 export function getActionUpdateMonster(monster) {
     return {
         type: UPDATE_MONSTER,
@@ -43,7 +35,6 @@ export async function setCurrMonster(id) {
         console.log('Cannot load curr monster', err)
         throw err
     }
-    // console.log('monster by id', currMonster);
 }
 
 export async function loadSopList() {
@@ -96,22 +87,9 @@ export function onResetMonsters(ev) {
     monsterService.resetMonsters()
 }
 
-// export async function addMonster(monster) {
-//     try {
-//         const savedMonster = await monsterService.save(monster)
-//         console.log('Added Monster', savedMonster)
-//         store.dispatch(getActionAddMonster(savedMonster))
-//         return savedMonster
-//     } catch (err) {
-//         console.log('Cannot add monster', err)
-//         throw err
-//     }
-// }
-
 export async function updateMonster(monster) {
     try {
         const savedMonster = await monsterService.save(monster)
-        // console.log('Updated Monster:', savedMonster)
         store.dispatch(getActionUpdateMonster(savedMonster))
         return savedMonster
     } catch (err) {

@@ -3,7 +3,7 @@
     margin: auto;
     margin-block-start: 1rem;
 
-    background: url('https://www.monsterhunter.com/wilds/_next/static/media/bg-content_2.f4ac7510.png');
+    background: url('https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105462/MH-sop/ehyek5mxpy6bcct5y299.png');
     height: 100%;
     width: 95%;
     border-radius: 10px;
@@ -65,7 +65,6 @@
         p {
             font-family: Papyrus, 'Garamond', serif;
             color: #3a3a3a;
-            // color: #ebebeb;
             font-size: 1.5rem;
             text-shadow: 0 0 16px rgba(0, 0, 0, .2);
             font-weight: 700;
@@ -84,7 +83,6 @@
             li {
                 font-family: Papyrus, 'Garamond', serif;
                 color: #3a3a3a;
-                // color: #ebebeb;
                 font-weight: 700;
                 font-size: 1.5rem;
             }
@@ -134,13 +132,4 @@
             }
         }
     }
-
-    // .letter-logo {
-    //     position: absolute;
-    //     bottom: 0rem;
-    //     right: 7rem;
-    //     width: 30rem;
-    //     z-index: -1;
-    //     opacity: .7;
-    // }
 }
