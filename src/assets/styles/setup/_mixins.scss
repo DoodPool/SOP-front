@@ -7,7 +7,7 @@
 }
 
 @mixin for-narrow-layout {
-    @media (min-width: calc($mobile-breakpoint + 40px)) {
+    @media (max-width: calc($narrow-breakpoint + 40px)) {
         @content;
     }
 }
@@ -20,6 +20,12 @@
 
 @mixin for-wide-layout {
     @media (min-width: calc($normal-breakpoint + 40px)) {
+        @content;
+    }
+}
+
+@mixin for-extra-wide-layout {
+    @media (max-width: calc($wide-breakpoint + 30px)) {
         @content;
     }
 }
