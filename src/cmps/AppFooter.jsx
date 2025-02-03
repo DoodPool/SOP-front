@@ -1,19 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import useIsMediumLayout from '../customHooks/useIsMediumLayout.js'
 
 export function AppFooter() {
+    const isMediumLayout = useIsMediumLayout()
 
     return (
         <section className="footer">
-            <svg className="footer-decor" viewBox="0 25 1727 58" fill="none" preserveAspectRatio="none">
+            {!isMediumLayout && <svg className="footer-decor" viewBox="0 25 1727 58" fill="none" preserveAspectRatio="none">
                 <path fill="#000" d="M0 0h1727v42L864 58l10.5-16L0 58V0Z"></path>
-            </svg>
+            </svg>}
             <footer className="app-footer">
                 <article>
                     <p>Monster Hunter</p>
                     <p>Smash or Pass</p>
-                    <div className="logo-container">
+                    {!isMediumLayout && <div className="logo-container">
                         <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" />
-                    </div>
+                    </div>}
                 </article>
 
                 <p className="credit">Made by - DoodPool</p>

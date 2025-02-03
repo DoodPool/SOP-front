@@ -55,8 +55,7 @@ const Background = ({ backgroundFragment }) => {
         eRef.current = Date.now();
 
         ctxRef.current = ctx
-        console.log(ctxRef);
-
+        // console.log(ctxRef);
 
         draw();
     }, [backgroundFragment]);

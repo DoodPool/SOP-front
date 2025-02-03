@@ -35,11 +35,9 @@ export function RootCmp() {
     return (
         <section>
             {isMenuOpen && <AppMenu onToggleMenu={onToggleMenu} />}
+            {!inHome && <Background backgroundFragment={backgroundFragment} />}
             <div className='app-container'>
-                {!inHome && <Background backgroundFragment={backgroundFragment} />}
                 <AppHeader onToggleMenu={onToggleMenu} inHome={inHome} />
-                {/* <div className='side-bar'>side var</div> */}
-                {/* <div className='main'>main</div> */}
                 <main className='main'>
                     <Routes>
                         {routes.map(route => <Route key={route.path} exact={true} element={route.component} path={route.path} />)}

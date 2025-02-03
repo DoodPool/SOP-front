@@ -5,11 +5,13 @@ import { monsterService } from '../services/monster.service.local'
 import { loadCount, updateMonster, setCurrMonster } from '../store/monster.actions'
 import { SopCounter } from '../cmps/SopCounter'
 import { useSelector } from 'react-redux'
+import useIsMediumLayout from '../customHooks/useIsMediumLayout'
 
 export function MonsterDetails() {
     const navigate = useNavigate()
     const params = useParams()
     const location = useLocation()
+    const isMediumLayout = useIsMediumLayout()
 
     const currMonster = useSelector(storeState => storeState.monsterModule.currMonster)
     const [currId, setCurrId] = useState(params.monsterId)
@@ -63,7 +65,7 @@ export function MonsterDetails() {
     if (!currMonster) return <div>loading...</div>
     return (
         <section className='details-container'>
-            <SopCounter />
+            <SopCounter isMediumLayout={isMediumLayout} />
 
             <div className='main-info'>
                 {/* <div className='monster-name'>
