@@ -3,6 +3,12 @@
 
     .sop-logo {
         position: absolute;
+
+        @include for-mobile-layout() {
+            top: 40%;
+            left: 60%;
+        }
+
         top: 50%;
         left: 55%;
         transform: translate(-50%, -50%);
@@ -22,6 +28,11 @@
         }
 
         p:nth-of-type(1) {
+
+            @include for-mobile-layout() {
+                font-size: 2.675rem !important;
+            }
+
             @include for-normal-layout {
                 font-size: 2.875rem;
             }
@@ -30,6 +41,11 @@
         }
 
         p:nth-of-type(2) {
+
+            @include for-mobile-layout() {
+                font-size: 1.475rem !important;
+            }
+
             @include for-normal-layout {
                 font-size: 1.525rem;
             }
@@ -54,6 +70,10 @@
         position: absolute;
         bottom: 0;
 
+        @include for-mobile-layout() {
+            height: 18vh;
+        }
+
         height: 27.5vh;
         margin-block-start: auto;
         align-items: center;
@@ -65,12 +85,22 @@
         width: 100%;
 
         .home-btns-container {
-            display: grid;
+
+            @include for-mobile-layout() {
+                grid-template-rows: repeat(2, 1fr);
+            }
+
             grid-template-rows: repeat(3, 1fr);
+            display: grid;
             grid-column: 2;
         }
 
         .start-btn-container {
+
+            @include for-mobile-layout() {
+                grid-row: 1;
+            }
+
             display: flex;
             justify-self: center;
             transition: 0.2s;
@@ -91,6 +121,11 @@
             }
 
             button {
+
+                @include for-mobile-layout() {
+                    font-size: 3.25rem;
+                }
+
                 font-size: 4.75rem;
                 letter-spacing: .10rem;
                 padding-inline: 1rem;
@@ -98,7 +133,8 @@
                 border: none;
                 background-color: inherit;
                 color: $clr4;
-                font-family: superital, monospace;
+                font-family: superital,
+                monospace;
                 transition: 0.2s;
             }
 
@@ -110,12 +146,20 @@
 
 
         .reset-btn {
+
+            @include for-mobile-layout() {
+                font-size: 1.75rem !important;
+                grid-row: 2;
+                align-self: end;
+            }
+
             text-align: center;
             color: $clr4;
             background-color: inherit;
             border: none;
 
-            font-family: superital, monospace;
+            font-family: superital,
+            monospace;
             text-transform: uppercase;
             font-size: 2.25rem;
             letter-spacing: .15rem;

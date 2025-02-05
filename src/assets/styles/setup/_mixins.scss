@@ -60,9 +60,16 @@
     background-color: transparent;
     color: white;
     font-size: 1.25rem;
-
+    
     border: 3px solid white;
     // border-radius: 4px;
+    
+    @include for-mobile-layout() {
+        padding-inline: 6rem;
+        padding-block: .75rem;
+        font-size: 1rem;
+        border-color: $clr;
+    }
 
     padding-inline: 3rem;
     padding-block: 1rem;

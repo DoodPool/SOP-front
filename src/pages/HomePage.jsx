@@ -5,11 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { LogoCarousel } from '../cmps/LogoCarousel';
 import { onResetMonsters } from '../store/monster.actions';
 import useIsMediumLayout from '../customHooks/useIsMediumLayout';
+import useIsMobile from '../customHooks/useIsMobile';
 
 export function HomePage() {
 
     const navigate = useNavigate()
     const isMediumLayout = useIsMediumLayout()
+    const isMobile = useIsMobile()
 
     function startGame() {
         navigate('/monster/101')
@@ -30,9 +32,9 @@ export function HomePage() {
 
                 <div className='home-btns-container'>
                     <div onClick={startGame} className='start-btn-container pointer'>
-                        <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                        {!isMobile && <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />}
                         <button className='pointer'>start</button>
-                        <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />
+                        {!isMobile && <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />}
                     </div>
                     <button className='reset-btn pointer' onClick={(ev) => onResetMonsters(ev)}>Reset</button>
                 </div>
@@ -48,10 +50,10 @@ export function HomePage() {
                 </div>}
             </div>
 
-            <div className='vid-filter'></div>
-            <div className='video-container'>
+            {!isMobile && <div className='vid-filter'></div>}
+            {!isMobile && <div className='video-container'>
                 <video src="https://res.cloudinary.com/dlnkzbe0y/video/upload/v1731589185/MH-sop/cvsag3zzvl6w7x6ydrku.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
-            </div>
+            </div>}
         </section >
     )
 }
