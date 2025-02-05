@@ -21,11 +21,16 @@ img {
 }
 
 .app-container {
+    display: flex;
+    flex-direction: column;
+
+    @include for-wide-layout() {
         display: grid;
         grid-template:
             'head head head' min-content
             'main main main' 1fr
             'footer footer footer' min-content;
+    }
 
     color: white;
     min-height: 100vh;
@@ -49,6 +54,7 @@ img {
     display: block;
 
     background-color: #121212;
+    // background-color: rgba(0, 0, 0, 1);
     height: 100%;
     width: 100%;
 

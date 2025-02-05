@@ -191,6 +191,12 @@
   .unavailable {
     cursor: not-allowed;
   }
+
+  .unavailable-btn {
+    cursor: not-allowed;
+    opacity: .225;
+    user-select: none;
+  }
   
   .inset-0 {
     inset: 0;

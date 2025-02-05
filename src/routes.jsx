@@ -26,11 +26,11 @@ const routes = [
         component: <SopResults />,
         label: 'Results'
     },
-    {
-        path: 'challenge',
-        component: <ExtraChallenge />,
-        label: 'Challenge'
-    },
+    // {
+    //     path: 'challenge',
+    //     component: <ExtraChallenge />,
+    //     label: 'Challenge'
+    // },
 ]
 
 export default routes

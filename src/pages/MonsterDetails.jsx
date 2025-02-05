@@ -28,7 +28,8 @@ export function MonsterDetails() {
             await setCurrMonster(currId)
         } catch (err) {
             console.log('Had issues loading monster', err)
-            navigate('/challenge')
+            // navigate('/challenge')
+            navigate('/results')
         }
     }
 

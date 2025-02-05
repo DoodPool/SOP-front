@@ -6,6 +6,10 @@
     display: grid;
     // grid-template-rows: repeat(2, 1fr);
 
+    @include for-mobile-layout() {
+        padding-inline: 0 !important;
+    }
+
     @include for-normal-layout() {
         justify-content: center;
         gap: 1.5rem;

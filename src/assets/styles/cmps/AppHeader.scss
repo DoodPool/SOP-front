@@ -1,4 +1,15 @@
 .app-header {
+
+    @include for-mobile-layout() {
+        height: auto !important;
+        padding-inline: 1.15rem !important;
+        padding-block: 1rem !important;
+
+        .header-btn {
+            font-size: 2rem !important;
+        }
+    }
+
     display: flex;
     justify-content: space-between;
     width: 100%;

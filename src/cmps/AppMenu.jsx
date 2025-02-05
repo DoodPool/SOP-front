@@ -36,7 +36,7 @@ export function AppMenu({ onToggleMenu }) {
 
                 <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
                 <p className="pointer" onClick={() => onResults()}>results</p>
-                <p className="pointer" onClick={() => onChallenge()}>Extra Challenge</p>
+                <p className="unavailable-btn">Extra Challenge</p>
             </nav>
 
             <div className="links clean-list flex justify-center">

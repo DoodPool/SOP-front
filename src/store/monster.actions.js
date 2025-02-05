@@ -12,7 +12,7 @@ export function getActionUpdateMonster(monster) {
 export async function loadMonsters() {
     try {
         const monsters = await monsterService.query()
-        console.log('Monsters from DB:', monsters)
+        // console.log('Monsters from DB:', monsters)
         store.dispatch({
             type: SET_MONSTERS,
             monsters
@@ -40,14 +40,14 @@ export async function setCurrMonster(id) {
 export async function loadSopList() {
     try {
         const smashList = await monsterService.query({ choice: 'smash' })
-        console.log('Smash from DB:', smashList)
+        // console.log('Smash from DB:', smashList)
         store.dispatch({
             type: SET_SMASH_LIST,
             smashList
         })
 
         const passList = await monsterService.query({ choice: 'pass' })
-        console.log('Smash from DB:', passList)
+        // console.log('Smash from DB:', passList)
         store.dispatch({
             type: SET_PASS_LIST,
             passList
