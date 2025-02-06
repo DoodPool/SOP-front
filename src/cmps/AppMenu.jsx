@@ -1,8 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from "react-router";
+import useIsMobile from "../customHooks/useIsMobile";
 
 export function AppMenu({ onToggleMenu }) {
     const navigate = useNavigate()
+    const isMobile = useIsMobile()
 
     function onHome() {
         navigate('/')
@@ -36,7 +38,7 @@ export function AppMenu({ onToggleMenu }) {
 
                 <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
                 <p className="pointer" onClick={() => onResults()}>results</p>
-                <p className="unavailable-btn">Extra Challenge</p>
+                {!isMobile && <p className="unavailable-btn">Extra Challenge</p>}
             </nav>
 
             <div className="links clean-list flex justify-center">

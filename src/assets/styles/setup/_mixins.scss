@@ -69,6 +69,11 @@
         padding-block: .75rem;
         font-size: 1rem;
         border-color: $clr;
+
+        &:hover {
+            background-color: transparent !important;
+            color: white !important;
+        }
     }
 
     padding-inline: 3rem;

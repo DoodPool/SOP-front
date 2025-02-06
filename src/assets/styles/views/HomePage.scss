@@ -57,6 +57,11 @@
             position: relative;
 
             .logo {
+
+                @include for-mobile-layout() {
+                    width: 100% !important;
+                }
+                
                 position: absolute;
                 bottom: -60px;
                 left: 210px;
