@@ -6,27 +6,33 @@ export function ExtraChallenge() {
             <h1>Extra challenge</h1>
             <div className="challenge-container">
                 <div className="challenge-imgs">
-                    <img className="main-img" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105459/MH-sop/xzimayitzzcrmmaham9r.png" alt="challenge-img" />
+                    {/* <img className="main-img" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105459/MH-sop/xzimayitzzcrmmaham9r.png" alt="challenge-img" /> */}
+                    <img className="main-img" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058085/SOP-Moms/b1c6ves55seidlijgnf8.png" alt="challenge-img" />
                     <h2>Layered Set</h2>
                     <div className="layered-set">
                         <article>
-                            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/yk6mnijvvvyr0zhc1kzi.png" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/yk6mnijvvvyr0zhc1kzi.png" alt="" /> */}
+                            <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058081/SOP-Moms/qiu4hwhzlezjbiln0ik6.png" alt="" />
                             <p>Hare Band</p>
                         </article>
                         <article>
-                            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/uwkcoguzvg9se9eggwyf.png" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/uwkcoguzvg9se9eggwyf.png" alt="" /> */}
+                            <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058081/SOP-Moms/yfz3zs7byqpfl0wrhnb0.png" alt="" />
                             <p>Buff Body</p>
                         </article>
                         <article>
-                            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105456/MH-sop/tcojbgr2vt3yuhzyspka.png" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105456/MH-sop/tcojbgr2vt3yuhzyspka.png" alt="" /> */}
+                            <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058080/SOP-Moms/sc5d8uum7bbf639pcmom.png" alt="" />
                             <p>Gala Suit</p>
                         </article>
                         <article>
-                            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105456/MH-sop/jwaoqydeu2vbiidgmg2x.png" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105456/MH-sop/jwaoqydeu2vbiidgmg2x.png" alt="" /> */}
+                            <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058022/SOP-Moms/xhlht9canus8zcahaeka.png" alt="" />
                             <p>Buff Body</p>
                         </article>
                         <article>
-                            <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/uvpesklzmw7guog83qgs.png" alt="" />
+                            {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1736105457/MH-sop/uvpesklzmw7guog83qgs.png" alt="" /> */}
+                            <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058080/SOP-Moms/e6v1kmo4wmfg08paxtnw.png" alt="" />
                             <p>Gala Suit</p>
                         </article>
                     </div>

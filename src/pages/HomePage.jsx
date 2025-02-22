@@ -23,7 +23,8 @@ export function HomePage() {
                 <p>Monster Hunter</p>
                 <p>Smash or Pass</p>
                 {!isMediumLayout && <div className="logo-container">
-                    <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" />
+                    {/* <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" /> */}
+                    <img className="logo" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058022/SOP-Moms/pjb3s2iocw7t9heuat3z.png" alt="rai-pfp" />
                 </div>}
             </article>
             <div className='home-footer'>
@@ -32,15 +33,16 @@ export function HomePage() {
 
                 <div className='home-btns-container'>
                     <div onClick={startGame} className='start-btn-container pointer'>
-                        {!isMobile && <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />}
+                        {!isMobile && <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740257557/SOP-Moms/ysritkp1u8hkgxjr9xwv.png" alt="" />}
                         <button className='pointer'>start</button>
-                        {!isMobile && <img src="https://www.monsterhunter.com/wilds/assets/img/icon/scroll.png" alt="" />}
+                        {!isMobile && <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740257557/SOP-Moms/ysritkp1u8hkgxjr9xwv.png" alt="" />}
                     </div>
                     <button className='reset-btn pointer' onClick={(ev) => onResetMonsters(ev)}>Reset</button>
                 </div>
 
                 {!isMediumLayout && <div className="social-links-container">
-                    <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269010/MH-sop/e5hkelfwun1gtyy9iydl.jpg" alt="rai-pfp" />
+                    {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269010/MH-sop/e5hkelfwun1gtyy9iydl.jpg" alt="rai-pfp" /> */}
+                    <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740052796/SOP-Moms/xkegay6ata9avcl3hs4r.jpg" alt="rai-pfp" />
 
                     <div className="links clean-list flex justify-center">
                         <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>
@@ -52,7 +54,8 @@ export function HomePage() {
 
             {!isMobile && <div className='vid-filter'></div>}
             {!isMobile && <div className='video-container'>
-                <video src="https://res.cloudinary.com/dlnkzbe0y/video/upload/v1731589185/MH-sop/cvsag3zzvl6w7x6ydrku.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
+                {/* <video src="https://res.cloudinary.com/dlnkzbe0y/video/upload/v1731589185/MH-sop/cvsag3zzvl6w7x6ydrku.mp4" type="video/mp4" autoPlay muted playsInline loop></video> */}
+                <video src="https://res.cloudinary.com/dwdt2yrid/video/upload/v1740058050/SOP-Moms/kcqfqlnncqqmkalsz8dz.mp4" type="video/mp4" autoPlay muted playsInline loop></video>
             </div>}
         </section >
     )
