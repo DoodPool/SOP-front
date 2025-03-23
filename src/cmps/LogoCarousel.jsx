@@ -22,20 +22,20 @@ export function LogoCarousel() {
                 modules={[Mousewheel, Pagination, Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091102/SOP-Moms/Logos/k3bo3zums9x5xn2gjbrt.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091099/SOP-Moms/Logos/cgsasqkguzmzdo5pef8e.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091100/SOP-Moms/Logos/aeekgdcy5kxhaxlarjoa.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091101/SOP-Moms/Logos/ofrwazu7tlpmvyznyrro.png" alt="" /></SwiperSlide> 
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091101/SOP-Moms/Logos/wdaz1hpjmksbcbtdhedl.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091099/SOP-Moms/Logos/kirrzzhsrhiqq9ma7tug.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091100/SOP-Moms/Logos/wy5bg18e3uv2zppjsoci.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091101/SOP-Moms/Logos/ngg7nmri6jnwwrqthxaj.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091103/SOP-Moms/Logos/u7o6hxmoh6a0dzbdkw0w.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091102/SOP-Moms/Logos/e4kli317srnx4ni6l1e5.webp" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091101/SOP-Moms/Logos/hq0tipes2qm40h56r0en.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091099/SOP-Moms/Logos/jej6subfjq3kdvvfptv6.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091103/SOP-Moms/Logos/a2ivtcumhgvwpzmy9hxp.png" alt="" /></SwiperSlide>
-                <SwiperSlide><img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740091098/SOP-Moms/Logos/rxdxsrkko24gpetnmtpt.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764297/Logos/jphvlikj7yhbo8uovjkb.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764296/Logos/cmg1et9op4goweak3syr.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764298/Logos/xv6lm67kvdhrg8ry2lop.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764295/Logos/vj9jxn9plscatad8pgb4.png" alt="" /></SwiperSlide> 
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764296/Logos/xqp8ikvuilfpmfb79tby.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764294/Logos/pog99r9wqclroz8scqj4.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img className='light-shadow' src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764296/Logos/hckeegmuv5lbzk3mdm5k.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764297/Logos/rscpon8vtb82cyet3to4.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764298/Logos/poiniskyzdoq5fq8ie1a.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764297/Logos/nl6jl4aqqdihanzcioxq.webp" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764297/Logos/s6k601mqyxyfygsov9we.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764295/Logos/dmjtz7m6qbryc7qk4txx.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764298/Logos/yoeqff5zbxdafnpqsdbx.png" alt="" /></SwiperSlide>
+                <SwiperSlide><img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764294/Logos/yqzm7i0vl3xfnyph7ycy.png" alt="" /></SwiperSlide>
             </Swiper>
         </div>
     )

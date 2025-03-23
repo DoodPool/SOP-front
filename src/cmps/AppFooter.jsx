@@ -14,16 +14,16 @@ export function AppFooter() {
                     <p>Monster Hunter</p>
                     <p>Smash or Pass</p>
                     {!isMediumLayout && <div className="logo-container">
-                        {/* <img className="logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731277505/MH-sop/hpvoo2i5r1ae7jhyd6xk.png" alt="rai-pfp" /> */}
-                        <img className="logo" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058022/SOP-Moms/pjb3s2iocw7t9heuat3z.png" alt="rai-pfp" />
+                        {/* <img className="logo" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740058022/SOP-Moms/pjb3s2iocw7t9heuat3z.png" alt="rai-pfp" /> */}
+                        <img className="logo" src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764246/qq1kjglbnwbixj4f7cmr.png" alt="rai-pfp" />
                     </div>}
                 </article>
 
                 <p className="credit">Made by - DoodPool</p>
 
                 <div className="social-links-container">
-                    {/* <img src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269010/MH-sop/e5hkelfwun1gtyy9iydl.jpg" alt="rai-pfp" /> */}
-                    <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740052796/SOP-Moms/xkegay6ata9avcl3hs4r.jpg" alt="rai-pfp" />
+                    {/* <img src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740052796/SOP-Moms/xkegay6ata9avcl3hs4r.jpg" alt="rai-pfp" /> */}
+                    <img src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764247/mvlkuzmjobhvq9cyihi5.jpg" alt="rai-pfp" />
 
                     <div className="links clean-list flex justify-center">
                         <a href="https://www.youtube.com/@WreckitRai"><FontAwesomeIcon icon="fa-brands fa-youtube" /></a>

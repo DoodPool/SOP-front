@@ -34,8 +34,8 @@ export function AppMenu({ onToggleMenu }) {
             </div>
 
             <nav className="flex column">
-                {/* <img className="mh6-logo" src="https://res.cloudinary.com/dlnkzbe0y/image/upload/v1731269014/MH-sop/arctejrbfle2is8shpp8.webp" alt="mh6-logo" /> */}
-                <img className="mh6-logo" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740052778/SOP-Moms/xfwbjkzmhmwtmcicyxew.webp" alt="mh6-logo" />
+                {/* <img className="mh6-logo" src="https://res.cloudinary.com/dwdt2yrid/image/upload/v1740052778/SOP-Moms/xfwbjkzmhmwtmcicyxew.webp" alt="mh6-logo" /> */}
+                <img className="mh6-logo" src="https://res.cloudinary.com/dvcavuvzw/image/upload/v1742764249/ik7xw16twvigv7lcxici.webp" alt="mh6-logo" />
 
                 <p className="pointer" onClick={() => onMonsterList()}>Monster list</p>
                 <p className="pointer" onClick={() => onResults()}>results</p>
